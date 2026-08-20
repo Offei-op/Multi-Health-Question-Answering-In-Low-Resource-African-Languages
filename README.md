@@ -5924,10 +5924,3 @@ The following sections reproduce every `summary.json` in the workspace at the ti
 
 </details>
 
-## License and data notice
-
-No license was present in the original workspace. Add a license before redistributing the code. Confirm the competition/dataset terms and the licenses of all base models before publishing the excluded data, weights, or derived artifacts.
-
-## Citation
-
-If this research is used, cite the repository and the upstream datasets/models used by the relevant experiment. The exact upstream model identifiers are preserved in the experiment summaries and scripts.
