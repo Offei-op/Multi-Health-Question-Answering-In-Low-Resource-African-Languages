@@ -148,7 +148,7 @@ The Modal scripts define the image dependencies, GPU type, volume paths, seeds, 
 
 ## Local-only artifact policy
 
-The local workspace inventory at README generation time is **1,353 files / 18.05 GiB**, including 469 Python files, 17 notebooks, 105 JSON files, and 224 CSV files. GitHub-ready commits exclude the following classes via `.gitignore`:
+The local workspace inventory at README generation time is **1,354 files / 18.05 GiB**, including 469 Python files, 17 notebooks, 105 JSON files, and 224 CSV files. GitHub-ready commits exclude the following classes via `.gitignore`:
 
 - raw `Train.csv`, `Val.csv`, and `Test.csv` data plus generated CSV prediction tables;
 - model weights and training state (`*.safetensors`, `*.pt`, `*.bin`, `*.pkl`);

@@ -88,7 +88,7 @@ def inventory() -> tuple[int, int, int, int, int, int]:
 
 
 def write_local_manifest() -> None:
-    ignored_suffixes = {".csv", ".safetensors", ".pt", ".bin", ".pkl", ".zip", ".parquet", ".onnx", ".docx", ".xlsx", ".html"}
+    ignored_suffixes = {".csv", ".safetensors", ".pt", ".pth", ".bin", ".pkl", ".zip", ".parquet", ".onnx", ".model", ".bak", ".docx", ".xlsx", ".html"}
     ignored_names = {"Train.csv", "Val.csv", "Test.csv"}
     artifacts = []
     for path in ROOT.rglob("*"):

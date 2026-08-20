@@ -10,11 +10,15 @@ Test.csv
 # Model weights, optimizer/checkpoint state, caches, and archives
 *.safetensors
 *.pt
+*.pth
 *.bin
 *.pkl
 *.zip
 *.parquet
 *.onnx
+*.model
+*.bak
+onnx/
 
 # Rendered/binary review artifacts
 *.docx
@@ -24,6 +28,7 @@ Test.csv
 # Python and notebook transient state
 __pycache__/
 *.py[cod]
+**/=3.0
 .ipynb_checkpoints/
 
 # Local environment and secrets
