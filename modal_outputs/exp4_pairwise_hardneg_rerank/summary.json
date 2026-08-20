@@ -1,0 +1,192 @@
+{
+  "experiment": "ft_bgem3_top50_pairwise_hardneg_rerank",
+  "gpu": "L40S",
+  "base_reranker": "BAAI/bge-reranker-v2-m3",
+  "k": 50,
+  "pairs_per_query": 6,
+  "epochs": 1,
+  "batch_size": 8,
+  "gradient_accumulation": 4,
+  "effective_pair_batch": 32,
+  "learning_rate": 1e-05,
+  "max_length": 512,
+  "train_seconds": 3271.5812406539917,
+  "pair_counts": {
+    "Aka_Gha": 23909,
+    "Amh_Eth": 10394,
+    "Eng_Eth": 21064,
+    "Eng_Gha": 24398,
+    "Eng_Ken": 11328,
+    "Eng_Uga": 27818,
+    "Lug_Uga": 16832,
+    "Swa_Ken": 11391
+  },
+  "candidate_baseline": {
+    "label": "ft_bgem3_per_subset_top50",
+    "top1_r1": 0.5394795443970752,
+    "oracle_r1": 0.6840949279607131,
+    "per_subset": {
+      "Aka_Gha": {
+        "top1_r1": 0.2903,
+        "oracle_r1": 0.3957
+      },
+      "Amh_Eth": {
+        "top1_r1": 0.1712,
+        "oracle_r1": 0.3084
+      },
+      "Eng_Eth": {
+        "top1_r1": 0.5619,
+        "oracle_r1": 0.7509
+      },
+      "Eng_Gha": {
+        "top1_r1": 0.2831,
+        "oracle_r1": 0.3854
+      },
+      "Eng_Ken": {
+        "top1_r1": 0.7992,
+        "oracle_r1": 0.9204
+      },
+      "Eng_Uga": {
+        "top1_r1": 0.8172,
+        "oracle_r1": 0.938
+      },
+      "Lug_Uga": {
+        "top1_r1": 0.5587,
+        "oracle_r1": 0.8535
+      },
+      "Swa_Ken": {
+        "top1_r1": 0.7941,
+        "oracle_r1": 0.9212
+      }
+    }
+  },
+  "top1": {
+    "label": "ft_bgem3_top1",
+    "rouge1": 0.5394795443970752,
+    "rougeL": 0.4922645017101416,
+    "per_subset": {
+      "Aka_Gha": {
+        "rouge1": 0.2903,
+        "rougeL": 0.173
+      },
+      "Amh_Eth": {
+        "rouge1": 0.1712,
+        "rougeL": 0.1603
+      },
+      "Eng_Eth": {
+        "rouge1": 0.5619,
+        "rougeL": 0.5429
+      },
+      "Eng_Gha": {
+        "rouge1": 0.2831,
+        "rougeL": 0.1869
+      },
+      "Eng_Ken": {
+        "rouge1": 0.7992,
+        "rougeL": 0.7816
+      },
+      "Eng_Uga": {
+        "rouge1": 0.8172,
+        "rougeL": 0.8009
+      },
+      "Lug_Uga": {
+        "rouge1": 0.5587,
+        "rougeL": 0.5357
+      },
+      "Swa_Ken": {
+        "rouge1": 0.7941,
+        "rougeL": 0.7759
+      }
+    }
+  },
+  "rerank": {
+    "label": "pairwise_rerank",
+    "rouge1": 0.5712154030803913,
+    "rougeL": 0.5232546272454361,
+    "per_subset": {
+      "Aka_Gha": {
+        "rouge1": 0.3049,
+        "rougeL": 0.1789
+      },
+      "Amh_Eth": {
+        "rouge1": 0.1655,
+        "rougeL": 0.1523
+      },
+      "Eng_Eth": {
+        "rouge1": 0.6622,
+        "rougeL": 0.6471
+      },
+      "Eng_Gha": {
+        "rouge1": 0.2811,
+        "rougeL": 0.1813
+      },
+      "Eng_Ken": {
+        "rouge1": 0.8038,
+        "rougeL": 0.7823
+      },
+      "Eng_Uga": {
+        "rouge1": 0.8548,
+        "rougeL": 0.8415
+      },
+      "Lug_Uga": {
+        "rouge1": 0.6383,
+        "rougeL": 0.6212
+      },
+      "Swa_Ken": {
+        "rouge1": 0.8162,
+        "rougeL": 0.7966
+      }
+    }
+  },
+  "oracle": {
+    "label": "oracle_topk",
+    "rouge1": 0.6840949279607131,
+    "rougeL": 0.6231081254679269,
+    "per_subset": {
+      "Aka_Gha": {
+        "rouge1": 0.3957,
+        "rougeL": 0.2245
+      },
+      "Amh_Eth": {
+        "rouge1": 0.3084,
+        "rougeL": 0.2756
+      },
+      "Eng_Eth": {
+        "rouge1": 0.7509,
+        "rougeL": 0.7291
+      },
+      "Eng_Gha": {
+        "rouge1": 0.3854,
+        "rougeL": 0.2488
+      },
+      "Eng_Ken": {
+        "rouge1": 0.9204,
+        "rougeL": 0.9058
+      },
+      "Eng_Uga": {
+        "rouge1": 0.938,
+        "rougeL": 0.93
+      },
+      "Lug_Uga": {
+        "rouge1": 0.8535,
+        "rougeL": 0.8393
+      },
+      "Swa_Ken": {
+        "rouge1": 0.9212,
+        "rougeL": 0.9065
+      }
+    }
+  },
+  "delta_rerank_vs_top1": 0.031735858683316076,
+  "delta_rerank_vs_exp2": -0.018001225266423226,
+  "diagnostics": {
+    "exact_oracle_ge_095_and_rerank_lt_050_rows": 462,
+    "exact_oracle_ge_095_and_rerank_lt_050_gain_if_oracle": 0.05501189114785372,
+    "exact_oracle_ge_095_missed_rows": 572,
+    "top1_ge_095_jumped_rows": 198,
+    "top1_ge_095_jumped_loss_vs_top1": 0.018777411582631083,
+    "changed_from_top1_rows": 3837,
+    "wins_vs_top1_rows": 2152,
+    "hurts_vs_top1_rows": 1637
+  }
+}

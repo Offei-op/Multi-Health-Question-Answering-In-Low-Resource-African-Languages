@@ -1,0 +1,306 @@
+{
+  "loaded_sources": [
+    "current_family_meta",
+    "exp3_top100",
+    "exp4_pairwise",
+    "exp5_encoder_exp2",
+    "exp9_jina",
+    "exp14_qonly",
+    "exp8_ghana",
+    "exp10_lug_global",
+    "exp10_lug_specialized",
+    "exp12_lug_merged",
+    "exp13_lug_selector",
+    "local_mt0_generation",
+    "exp1_qa_base",
+    "exp1_qa_ft",
+    "exp11_bge_base_top1",
+    "exp11_e5_base_top1",
+    "exp11_e5_large_top1"
+  ],
+  "source_scores": [
+    {
+      "source": "current_family_meta",
+      "score": 0.6258985395745735
+    },
+    {
+      "source": "exp3_top100",
+      "score": 0.5904174317680138
+    },
+    {
+      "source": "exp4_pairwise",
+      "score": 0.5712154030803913
+    },
+    {
+      "source": "exp5_encoder_exp2",
+      "score": 0.5902712632484098
+    },
+    {
+      "source": "exp9_jina",
+      "score": 0.5770043163797073
+    },
+    {
+      "source": "exp14_qonly",
+      "score": 0.5647796047735751
+    },
+    {
+      "source": "exp8_ghana",
+      "score": 0.10693814147382058
+    },
+    {
+      "source": "exp10_lug_global",
+      "score": 0.08595494009283326
+    },
+    {
+      "source": "exp10_lug_specialized",
+      "score": 0.08583540971177088
+    },
+    {
+      "source": "exp12_lug_merged",
+      "score": 0.0864893632152096
+    },
+    {
+      "source": "exp13_lug_selector",
+      "score": 0.08754675528660487
+    },
+    {
+      "source": "local_mt0_generation",
+      "score": 0.18886970512760629
+    },
+    {
+      "source": "exp1_qa_base",
+      "score": 0.445531304063734
+    },
+    {
+      "source": "exp1_qa_ft",
+      "score": 0.45403765213713065
+    },
+    {
+      "source": "exp11_bge_base_top1",
+      "score": 0.49846948014743486
+    },
+    {
+      "source": "exp11_e5_base_top1",
+      "score": 0.4875018420822146
+    },
+    {
+      "source": "exp11_e5_large_top1",
+      "score": 0.5048918014240319
+    }
+  ],
+  "current_best": 0.6258761046358958,
+  "oracle": 0.6738652677123754,
+  "best": {
+    "model": "ensemble",
+    "score": 0.6277010239494406,
+    "gain_vs_exp2": 0.038484395602626065,
+    "gain_vs_current_best": 0.0018249193135447817,
+    "choice_counts": {
+      "exp4_pairwise": 2646,
+      "current_family_meta": 1048,
+      "exp3_top100": 584,
+      "exp9_jina": 530,
+      "exp14_qonly": 481,
+      "exp5_encoder_exp2": 385,
+      "exp8_ghana": 266,
+      "exp1_qa_base": 180,
+      "local_mt0_generation": 163,
+      "exp1_qa_ft": 132,
+      "exp11_e5_large_top1": 101,
+      "exp11_e5_base_top1": 60,
+      "exp11_bge_base_top1": 52,
+      "exp13_lug_selector": 27,
+      "exp12_lug_merged": 18,
+      "exp10_lug_specialized": 9,
+      "exp10_lug_global": 4
+    },
+    "per_subset": {
+      "Aka_Gha": 0.330326,
+      "Amh_Eth": 0.198707,
+      "Eng_Eth": 0.684471,
+      "Eng_Gha": 0.318674,
+      "Eng_Ken": 0.868384,
+      "Eng_Uga": 0.904338,
+      "Lug_Uga": 0.81362,
+      "Swa_Ken": 0.860331
+    }
+  },
+  "results": [
+    {
+      "model": "hgb",
+      "score": 0.6267725269182943,
+      "gain_vs_exp2": 0.037555898571479784,
+      "gain_vs_current_best": 0.0008964222823985013,
+      "choice_counts": {
+        "exp4_pairwise": 3597,
+        "exp3_top100": 1029,
+        "current_family_meta": 1004,
+        "exp14_qonly": 302,
+        "local_mt0_generation": 164,
+        "exp9_jina": 148,
+        "exp5_encoder_exp2": 79,
+        "exp8_ghana": 76,
+        "exp11_e5_large_top1": 72,
+        "exp1_qa_base": 66,
+        "exp1_qa_ft": 57,
+        "exp11_bge_base_top1": 53,
+        "exp11_e5_base_top1": 38,
+        "exp13_lug_selector": 1
+      },
+      "per_subset": {
+        "Aka_Gha": 0.328736,
+        "Amh_Eth": 0.199166,
+        "Eng_Eth": 0.685864,
+        "Eng_Gha": 0.314757,
+        "Eng_Ken": 0.865843,
+        "Eng_Uga": 0.90423,
+        "Lug_Uga": 0.812321,
+        "Swa_Ken": 0.862572
+      }
+    },
+    {
+      "model": "extra_trees",
+      "score": 0.6258916015796743,
+      "gain_vs_exp2": 0.03667497323285973,
+      "gain_vs_current_best": 1.5496943778448014e-05,
+      "choice_counts": {
+        "exp4_pairwise": 1481,
+        "current_family_meta": 1218,
+        "exp9_jina": 899,
+        "exp5_encoder_exp2": 695,
+        "exp14_qonly": 573,
+        "exp3_top100": 533,
+        "exp8_ghana": 337,
+        "exp11_bge_base_top1": 186,
+        "exp1_qa_base": 181,
+        "exp11_e5_large_top1": 172,
+        "exp1_qa_ft": 154,
+        "local_mt0_generation": 111,
+        "exp11_e5_base_top1": 83,
+        "exp13_lug_selector": 25,
+        "exp12_lug_merged": 17,
+        "exp10_lug_specialized": 15,
+        "exp10_lug_global": 6
+      },
+      "per_subset": {
+        "Aka_Gha": 0.328701,
+        "Amh_Eth": 0.196192,
+        "Eng_Eth": 0.682694,
+        "Eng_Gha": 0.319421,
+        "Eng_Ken": 0.864144,
+        "Eng_Uga": 0.902459,
+        "Lug_Uga": 0.80937,
+        "Swa_Ken": 0.85931
+      }
+    },
+    {
+      "model": "random_forest",
+      "score": 0.6274743596051062,
+      "gain_vs_exp2": 0.03825773125829168,
+      "gain_vs_current_best": 0.0015982549692103998,
+      "choice_counts": {
+        "exp4_pairwise": 1252,
+        "current_family_meta": 1188,
+        "exp9_jina": 715,
+        "exp3_top100": 668,
+        "exp5_encoder_exp2": 582,
+        "exp14_qonly": 543,
+        "exp1_qa_base": 269,
+        "exp11_e5_large_top1": 268,
+        "exp8_ghana": 247,
+        "exp1_qa_ft": 229,
+        "local_mt0_generation": 226,
+        "exp11_e5_base_top1": 191,
+        "exp11_bge_base_top1": 179,
+        "exp10_lug_specialized": 39,
+        "exp12_lug_merged": 35,
+        "exp13_lug_selector": 30,
+        "exp10_lug_global": 25
+      },
+      "per_subset": {
+        "Aka_Gha": 0.328492,
+        "Amh_Eth": 0.196429,
+        "Eng_Eth": 0.681976,
+        "Eng_Gha": 0.320296,
+        "Eng_Ken": 0.871826,
+        "Eng_Uga": 0.904208,
+        "Lug_Uga": 0.813883,
+        "Swa_Ken": 0.86004
+      }
+    },
+    {
+      "model": "ensemble",
+      "score": 0.6277010239494406,
+      "gain_vs_exp2": 0.038484395602626065,
+      "gain_vs_current_best": 0.0018249193135447817,
+      "choice_counts": {
+        "exp4_pairwise": 2646,
+        "current_family_meta": 1048,
+        "exp3_top100": 584,
+        "exp9_jina": 530,
+        "exp14_qonly": 481,
+        "exp5_encoder_exp2": 385,
+        "exp8_ghana": 266,
+        "exp1_qa_base": 180,
+        "local_mt0_generation": 163,
+        "exp1_qa_ft": 132,
+        "exp11_e5_large_top1": 101,
+        "exp11_e5_base_top1": 60,
+        "exp11_bge_base_top1": 52,
+        "exp13_lug_selector": 27,
+        "exp12_lug_merged": 18,
+        "exp10_lug_specialized": 9,
+        "exp10_lug_global": 4
+      },
+      "per_subset": {
+        "Aka_Gha": 0.330326,
+        "Amh_Eth": 0.198707,
+        "Eng_Eth": 0.684471,
+        "Eng_Gha": 0.318674,
+        "Eng_Ken": 0.868384,
+        "Eng_Uga": 0.904338,
+        "Lug_Uga": 0.81362,
+        "Swa_Ken": 0.860331
+      }
+    },
+    {
+      "model": "weighted_ensemble",
+      "score": 0.6273651928913013,
+      "gain_vs_exp2": 0.038148564544486785,
+      "gain_vs_current_best": 0.0014890882554055018,
+      "choice_counts": {
+        "exp4_pairwise": 3324,
+        "current_family_meta": 1031,
+        "exp3_top100": 482,
+        "exp14_qonly": 373,
+        "exp9_jina": 330,
+        "exp5_encoder_exp2": 270,
+        "exp8_ghana": 257,
+        "local_mt0_generation": 154,
+        "exp1_qa_base": 149,
+        "exp1_qa_ft": 97,
+        "exp11_e5_large_top1": 85,
+        "exp11_e5_base_top1": 54,
+        "exp11_bge_base_top1": 31,
+        "exp13_lug_selector": 25,
+        "exp12_lug_merged": 15,
+        "exp10_lug_specialized": 6,
+        "exp10_lug_global": 3
+      },
+      "per_subset": {
+        "Aka_Gha": 0.330038,
+        "Amh_Eth": 0.198803,
+        "Eng_Eth": 0.68489,
+        "Eng_Gha": 0.317908,
+        "Eng_Ken": 0.868384,
+        "Eng_Uga": 0.90399,
+        "Lug_Uga": 0.813693,
+        "Swa_Ken": 0.85872
+      }
+    }
+  ],
+  "notes": [
+    "This includes already-local validation artifacts that may not yet have mirrored test predictions.",
+    "No Modal compute was used."
+  ]
+}

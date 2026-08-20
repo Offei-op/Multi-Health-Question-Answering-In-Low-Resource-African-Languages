@@ -1,0 +1,48 @@
+ANSWER CLUSTER ORACLE AUDIT
+==========================================================================================
+
+BGE status: {'available': True, 'device': 'cuda'}
+
+Top overall oracle metrics:
+                                     metric  oracle_r1  rows_ge_095
+      bge200_plus_lexical_all_best_rank@200   0.702646         3366
+            bge200_plus_lexical_all_rrf@200   0.702642         3366
+bge200_plus_lexical_all_count_then_rank@200   0.702642         3366
+            bge200_plus_lexical_all_rrf@100   0.699023         3357
+      bge200_plus_lexical_all_best_rank@100   0.698990         3358
+bge200_plus_lexical_all_count_then_rank@100   0.697715         3343
+                       bge200_best_rank@200   0.696806         3337
+                             bge200_rrf@200   0.696806         3337
+                 bge200_count_then_rank@200   0.696806         3337
+                 bge200_count_then_rank@100   0.695079         3336
+                             bge200_rrf@100   0.695079         3336
+                       bge200_best_rank@100   0.695077         3336
+       bge200_plus_lexical_all_best_rank@50   0.692240         3330
+                        lexical_all_rrf@200   0.692103         3272
+                  lexical_all_best_rank@200   0.692103         3272
+            lexical_all_count_then_rank@200   0.692103         3272
+            lexical_all_count_then_rank@100   0.691362         3272
+                        lexical_all_rrf@100   0.691362         3272
+                  lexical_all_best_rank@100   0.691187         3272
+                        bge200_best_rank@50   0.690923         3325
+             bge200_plus_lexical_all_rrf@50   0.689415         3306
+                              bge200_rrf@50   0.689256         3315
+                  bge200_count_then_rank@50   0.687782         3299
+ bge200_plus_lexical_all_count_then_rank@50   0.687572         3286
+                   lexical_all_best_rank@50   0.686758         3263
+                         lexical_all_rrf@50   0.686514         3261
+             lexical_all_count_then_rank@50   0.686392         3260
+                        bge200_best_rank@20   0.679421         3273
+       bge200_plus_lexical_all_best_rank@20   0.677990         3249
+                  lexical_q2q_best_rank@100   0.676951         3173
+
+Best metric by subset:
+ subset                                metric  oracle_r1  rows
+Aka_Gha bge200_plus_lexical_all_best_rank@200     0.4221  1114
+Amh_Eth bge200_plus_lexical_all_best_rank@200     0.3312   462
+Eng_Eth bge200_plus_lexical_all_best_rank@200     0.7636   564
+Eng_Gha bge200_plus_lexical_all_best_rank@200     0.3967  1104
+Eng_Ken bge200_plus_lexical_all_best_rank@200     0.9260   390
+Eng_Uga bge200_plus_lexical_all_best_rank@200     0.9474  1688
+Lug_Uga bge200_plus_lexical_all_best_rank@200     0.9053   846
+Swa_Ken bge200_plus_lexical_all_best_rank@200     0.9263   518

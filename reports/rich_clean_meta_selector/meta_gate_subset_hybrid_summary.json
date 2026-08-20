@@ -1,0 +1,47 @@
+{
+  "score": 0.6234960658361287,
+  "gain_vs_exp2": 0.03427943748931417,
+  "gain_vs_best_clean_before_gate": 0.016972831575996494,
+  "per_subset_selector": [
+    {
+      "subset": "Aka_Gha",
+      "selector": "meta",
+      "score": 0.32730234892787186
+    },
+    {
+      "subset": "Amh_Eth",
+      "selector": "gate",
+      "score": 0.19734811740192876
+    },
+    {
+      "subset": "Eng_Eth",
+      "selector": "meta",
+      "score": 0.6862770745957062
+    },
+    {
+      "subset": "Eng_Gha",
+      "selector": "gate",
+      "score": 0.30953944463889976
+    },
+    {
+      "subset": "Eng_Ken",
+      "selector": "meta",
+      "score": 0.8618394590310063
+    },
+    {
+      "subset": "Eng_Uga",
+      "selector": "meta",
+      "score": 0.9025423011566358
+    },
+    {
+      "subset": "Lug_Uga",
+      "selector": "gate",
+      "score": 0.806414929003477
+    },
+    {
+      "subset": "Swa_Ken",
+      "selector": "gate",
+      "score": 0.8538173918344737
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "experiment": "exp18_qwen3_cluster_listwise_reranker",
+  "base_model": "Qwen/Qwen3-Reranker-0.6B",
+  "candidate_k": 50,
+  "eval_k": 20,
+  "group_size": 8,
+  "max_train_groups": 12000,
+  "max_steps": 400,
+  "completed_steps": 400,
+  "gradient_accumulation": 8,
+  "effective_candidates_per_step": 64,
+  "learning_rate": 0.0001,
+  "max_length": 512,
+  "train_seconds": 1087.6802332401276,
+  "mining": {
+    "rows": [
+      {
+        "subset": "Aka_Gha",
+        "train_rows": 4455,
+        "clusters": 4432,
+        "eligible_train_groups": 4414,
+        "val_groups": 1114
+      },
+      {
+        "subset": "Amh_Eth",
+        "train_rows": 1845,
+        "clusters": 1838,
+        "eligible_train_groups": 1805,
+        "val_groups": 462
+      },
+      {
+        "subset": "Eng_Eth",
+        "train_rows": 3915,
+        "clusters": 2899,
+        "eligible_train_groups": 3913,
+        "val_groups": 564
+      },
+      {
+        "subset": "Eng_Gha",
+        "train_rows": 4443,
+        "clusters": 4378,
+        "eligible_train_groups": 4441,
+        "val_groups": 1104
+      },
+      {
+        "subset": "Eng_Ken",
+        "train_rows": 2080,
+        "clusters": 984,
+        "eligible_train_groups": 2079,
+        "val_groups": 390
+      },
+      {
+        "subset": "Eng_Uga",
+        "train_rows": 7623,
+        "clusters": 1791,
+        "eligible_train_groups": 7618,
+        "val_groups": 1688
+      },
+      {
+        "subset": "Lug_Uga",
+        "train_rows": 3383,
+        "clusters": 1112,
+        "eligible_train_groups": 3375,
+        "val_groups": 846
+      },
+      {
+        "subset": "Swa_Ken",
+        "train_rows": 2070,
+        "clusters": 985,
+        "eligible_train_groups": 2070,
+        "val_groups": 518
+      }
+    ],
+    "eligible_train_groups": 29715,
+    "selected_train_groups": 12000,
+    "val_groups": 6686
+  },
+  "retrieval_top1": {
+    "label": "cluster_fusion_qmax_qa_top1",
+    "rouge1": 0.5568867603221539,
+    "per_subset": {
+      "Aka_Gha": 0.301964,
+      "Amh_Eth": 0.182424,
+      "Eng_Eth": 0.575503,
+      "Eng_Gha": 0.296658,
+      "Eng_Ken": 0.810315,
+      "Eng_Uga": 0.828669,
+      "Lug_Uga": 0.619814,
+      "Swa_Ken": 0.794215
+    }
+  },
+  "zero_shot": null,
+  "listwise_qwen3": {
+    "label": "qwen3_listwise_top20",
+    "rouge1": 0.5435287703870808,
+    "per_subset": {
+      "Aka_Gha": 0.305426,
+      "Amh_Eth": 0.164884,
+      "Eng_Eth": 0.653791,
+      "Eng_Gha": 0.285826,
+      "Eng_Ken": 0.803271,
+      "Eng_Uga": 0.82414,
+      "Lug_Uga": 0.555588,
+      "Swa_Ken": 0.6928
+    }
+  },
+  "oracle": {
+    "label": "cluster_oracle_top20",
+    "rouge1": 0.6852973708083323,
+    "per_subset": {
+      "Aka_Gha": 0.395156,
+      "Amh_Eth": 0.297236,
+      "Eng_Eth": 0.745994,
+      "Eng_Gha": 0.383083,
+      "Eng_Ken": 0.920801,
+      "Eng_Uga": 0.940747,
+      "Lug_Uga": 0.871116,
+      "Swa_Ken": 0.920176
+    }
+  },
+  "delta_listwise_vs_retrieval": -0.013357989935073089,
+  "delta_listwise_vs_zero_shot": null,
+  "delta_listwise_vs_exp2": -0.045687857959733735
+}

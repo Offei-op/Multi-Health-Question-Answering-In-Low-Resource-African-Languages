@@ -1,0 +1,88 @@
+{
+  "experiment": "exp14_qonly_vs_exp2_selector",
+  "rows": 6686,
+  "feature_count": 55,
+  "categorical_features": [
+    "subset"
+  ],
+  "numeric_feature_count": 54,
+  "results": [
+    {
+      "label": "hgb",
+      "base_exp2_r1": 0.5892166283468145,
+      "qonly_r1": 0.5647796047735751,
+      "oracle_between_exp2_qonly": 0.6134483465316233,
+      "best_threshold": 0.6499999999999999,
+      "selected_r1": 0.5896085826957426,
+      "gain_vs_exp2": 0.0003919543489280253,
+      "qonly_pick_rate": 0.02034101106790308,
+      "accuracy": 0.8390667065510021,
+      "auc": 0.8680962319087684
+    },
+    {
+      "label": "extra_trees",
+      "base_exp2_r1": 0.5892166283468145,
+      "qonly_r1": 0.5647796047735751,
+      "oracle_between_exp2_qonly": 0.6134483465316233,
+      "best_threshold": 0.83,
+      "selected_r1": 0.5897932982629549,
+      "gain_vs_exp2": 0.0005766699161403599,
+      "qonly_pick_rate": 0.009572240502542627,
+      "accuracy": 0.8381693090038888,
+      "auc": 0.8698233830193256
+    },
+    {
+      "label": "rf",
+      "base_exp2_r1": 0.5892166283468145,
+      "qonly_r1": 0.5647796047735751,
+      "oracle_between_exp2_qonly": 0.6134483465316233,
+      "best_threshold": 0.82,
+      "selected_r1": 0.5897902140659471,
+      "gain_vs_exp2": 0.0005735857191325744,
+      "qonly_pick_rate": 0.011067903081064912,
+      "accuracy": 0.8393658390667066,
+      "auc": 0.8713328163629328
+    },
+    {
+      "label": "logreg",
+      "base_exp2_r1": 0.5892166283468145,
+      "qonly_r1": 0.5647796047735751,
+      "oracle_between_exp2_qonly": 0.6134483465316233,
+      "best_threshold": 0.8799999999999999,
+      "selected_r1": 0.5899765648245269,
+      "gain_vs_exp2": 0.0007599364777123307,
+      "qonly_pick_rate": 0.01226443314388274,
+      "accuracy": 0.8384684415195932,
+      "auc": 0.8688771796368311
+    },
+    {
+      "label": "ensemble_avg",
+      "base_exp2_r1": 0.5892166283468145,
+      "qonly_r1": 0.5647796047735751,
+      "oracle_between_exp2_qonly": 0.6134483465316233,
+      "best_threshold": 0.7999999999999999,
+      "selected_r1": 0.5898206338728043,
+      "gain_vs_exp2": 0.0006040055259897148,
+      "qonly_pick_rate": 0.00807657792402034,
+      "accuracy": 0.8378701764881843,
+      "auc": 0.872758802158816
+    }
+  ],
+  "best": {
+    "label": "logreg",
+    "base_exp2_r1": 0.5892166283468145,
+    "qonly_r1": 0.5647796047735751,
+    "oracle_between_exp2_qonly": 0.6134483465316233,
+    "best_threshold": 0.8799999999999999,
+    "selected_r1": 0.5899765648245269,
+    "gain_vs_exp2": 0.0007599364777123307,
+    "qonly_pick_rate": 0.01226443314388274,
+    "accuracy": 0.8384684415195932,
+    "auc": 0.8688771796368311
+  },
+  "notes": [
+    "OOF selector uses only deployable prediction/text-shape features; no reference-derived features are included.",
+    "Target is whether q-only prediction has higher ROUGE-1 than exp2 q+a prediction.",
+    "Threshold is selected on OOF predictions, so treat gain as exploratory but less leaky than in-sample fitting."
+  ]
+}

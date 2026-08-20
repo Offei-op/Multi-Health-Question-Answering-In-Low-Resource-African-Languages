@@ -1,0 +1,152 @@
+{
+  "experiment": "existing_source_candidate_level_selector",
+  "rows": 6686,
+  "candidate_rows": 86918,
+  "sources": [
+    "exp1_baseline_qa_doc",
+    "exp1_finetuned_qa_doc",
+    "exp2_top1",
+    "exp2_rerank",
+    "exp3_top100_rerank",
+    "exp4_pairwise",
+    "exp5_encoder_exp2_rerank",
+    "exp8_ghana_grouped",
+    "exp9_jina",
+    "exp10_lug_global",
+    "exp10_lug_specialized",
+    "exp12_lug_merged",
+    "exp14_qonly"
+  ],
+  "best_single_source": {
+    "source": "exp3_top100_rerank",
+    "rouge1": 0.5904174317680138
+  },
+  "exp2_rerank": 0.5892166283468145,
+  "oracle_existing_sources": 0.6569692116972645,
+  "oracle_gain_vs_best_single": 0.06655177992925077,
+  "results": [
+    {
+      "label": "hgb",
+      "rouge1": 0.5973082755294336,
+      "choice_counts": {
+        "exp4_pairwise": 3938,
+        "exp2_rerank": 683,
+        "exp1_baseline_qa_doc": 580,
+        "exp2_top1": 518,
+        "exp3_top100_rerank": 354,
+        "exp1_finetuned_qa_doc": 246,
+        "exp5_encoder_exp2_rerank": 143,
+        "exp9_jina": 104,
+        "exp8_ghana_grouped": 61,
+        "exp14_qonly": 59
+      },
+      "per_subset": {
+        "Aka_Gha": 0.326009,
+        "Amh_Eth": 0.194108,
+        "Eng_Eth": 0.668667,
+        "Eng_Gha": 0.309374,
+        "Eng_Ken": 0.82786,
+        "Eng_Uga": 0.870496,
+        "Lug_Uga": 0.704131,
+        "Swa_Ken": 0.838061
+      }
+    },
+    {
+      "label": "extra_trees",
+      "rouge1": 0.5978363087630308,
+      "choice_counts": {
+        "exp4_pairwise": 2067,
+        "exp2_top1": 732,
+        "exp1_baseline_qa_doc": 721,
+        "exp1_finetuned_qa_doc": 518,
+        "exp3_top100_rerank": 498,
+        "exp5_encoder_exp2_rerank": 439,
+        "exp8_ghana_grouped": 433,
+        "exp2_rerank": 406,
+        "exp14_qonly": 349,
+        "exp9_jina": 317,
+        "exp10_lug_specialized": 115,
+        "exp12_lug_merged": 69,
+        "exp10_lug_global": 22
+      },
+      "per_subset": {
+        "Aka_Gha": 0.32426,
+        "Amh_Eth": 0.19765,
+        "Eng_Eth": 0.672758,
+        "Eng_Gha": 0.311612,
+        "Eng_Ken": 0.822176,
+        "Eng_Uga": 0.868886,
+        "Lug_Uga": 0.708365,
+        "Swa_Ken": 0.838868
+      }
+    },
+    {
+      "label": "ridge",
+      "rouge1": 0.5945472115690034,
+      "choice_counts": {
+        "exp4_pairwise": 3964,
+        "exp2_top1": 1083,
+        "exp2_rerank": 685,
+        "exp1_baseline_qa_doc": 309,
+        "exp1_finetuned_qa_doc": 168,
+        "exp3_top100_rerank": 148,
+        "exp5_encoder_exp2_rerank": 131,
+        "exp14_qonly": 85,
+        "exp9_jina": 80,
+        "exp8_ghana_grouped": 32,
+        "exp12_lug_merged": 1
+      },
+      "per_subset": {
+        "Aka_Gha": 0.321602,
+        "Amh_Eth": 0.194901,
+        "Eng_Eth": 0.667544,
+        "Eng_Gha": 0.30704,
+        "Eng_Ken": 0.813866,
+        "Eng_Uga": 0.865645,
+        "Lug_Uga": 0.709478,
+        "Swa_Ken": 0.835005
+      }
+    },
+    {
+      "label": "ensemble_avg",
+      "rouge1": 0.5965919897978431,
+      "choice_counts": {
+        "exp4_pairwise": 4029,
+        "exp2_top1": 971,
+        "exp2_rerank": 598,
+        "exp1_baseline_qa_doc": 294,
+        "exp3_top100_rerank": 209,
+        "exp1_finetuned_qa_doc": 172,
+        "exp5_encoder_exp2_rerank": 159,
+        "exp9_jina": 119,
+        "exp8_ghana_grouped": 51,
+        "exp14_qonly": 45,
+        "exp10_lug_specialized": 24,
+        "exp12_lug_merged": 14,
+        "exp10_lug_global": 1
+      },
+      "per_subset": {
+        "Aka_Gha": 0.324326,
+        "Amh_Eth": 0.196249,
+        "Eng_Eth": 0.67141,
+        "Eng_Gha": 0.308109,
+        "Eng_Ken": 0.819911,
+        "Eng_Uga": 0.868369,
+        "Lug_Uga": 0.709141,
+        "Swa_Ken": 0.83497
+      }
+    }
+  ],
+  "best": {
+    "label": "extra_trees",
+    "rouge1": 0.5978363087630308,
+    "gain_vs_best_single": 0.007418876995017087,
+    "gain_vs_exp2_rerank": 0.008619680416216302,
+    "top_choice": "exp4_pairwise"
+  },
+  "notes": [
+    "OOF split is by ID, so all candidates for a validation row are held out together.",
+    "Features use only source name, subset, prediction text shape, and agreement/similarity among candidate predictions.",
+    "This does not require Modal; conversion to test requires the same prediction sources to exist for test."
+  ]
+}

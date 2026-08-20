@@ -1,0 +1,34 @@
+{
+  "baseline_exp2": 0.5892166283468145,
+  "base_score": 0.6234960658361287,
+  "clean_oracle": 0.6479322858935932,
+  "best": {
+    "model": "extra_trees_pred_gain",
+    "scope": "sweep",
+    "threshold": 3.2490423564013327e-05,
+    "score": 0.6237821868130333,
+    "gain_vs_exp2": 0.03456555846621878,
+    "gain_vs_base": 0.0002861209769046136,
+    "override_rate": 0.12503739156446306,
+    "override_counts": {
+      "exp2_rerank": 527,
+      "cluster_fast": 189,
+      "exp2_top1": 78,
+      "cluster_noleak": 42
+    },
+    "per_subset": {
+      "Aka_Gha": 0.327202,
+      "Amh_Eth": 0.196744,
+      "Eng_Eth": 0.686277,
+      "Eng_Gha": 0.310199,
+      "Eng_Ken": 0.861839,
+      "Eng_Uga": 0.902542,
+      "Lug_Uga": 0.808277,
+      "Swa_Ken": 0.853817
+    }
+  },
+  "notes": [
+    "Zero scope is the cleaner calibrated read.",
+    "Sweep scope is diagnostic and may be optimistic because threshold is selected on OOF validation predictions."
+  ]
+}

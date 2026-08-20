@@ -1,0 +1,247 @@
+{
+  "submission": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp5_encoder_exp2_test_predictions_files\\submission_exp7_base_exp5_length_grouped.csv",
+  "sources": [
+    "exp7_cluster",
+    "exp5_encoder_exp2"
+  ],
+  "source_scores": {
+    "exp5_encoder_exp2": 0.5902712632484098,
+    "exp7_cluster": 0.6363771294109717
+  },
+  "full_validation_group_score": 0.637714650600872,
+  "oof_group_score": 0.6369591077160984,
+  "oof_gain_vs_exp2": 0.047742479369283886,
+  "fold_scores": [
+    {
+      "fold": 1,
+      "score": 0.6438033101167855
+    },
+    {
+      "fold": 2,
+      "score": 0.6411538283540543
+    },
+    {
+      "fold": 3,
+      "score": 0.6307107248393876
+    },
+    {
+      "fold": 4,
+      "score": 0.6365644297662189
+    },
+    {
+      "fold": 5,
+      "score": 0.6325581264296993
+    }
+  ],
+  "group_picks": [
+    {
+      "subset": "Aka_Gha",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Aka_Gha",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Aka_Gha",
+      "length_bin": 2,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Aka_Gha",
+      "length_bin": 3,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Aka_Gha",
+      "length_bin": 4,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Amh_Eth",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Amh_Eth",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Amh_Eth",
+      "length_bin": 2,
+      "source": "exp5_encoder_exp2"
+    },
+    {
+      "subset": "Amh_Eth",
+      "length_bin": 3,
+      "source": "exp5_encoder_exp2"
+    },
+    {
+      "subset": "Amh_Eth",
+      "length_bin": 4,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Eth",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Eth",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Eth",
+      "length_bin": 2,
+      "source": "exp5_encoder_exp2"
+    },
+    {
+      "subset": "Eng_Eth",
+      "length_bin": 3,
+      "source": "exp5_encoder_exp2"
+    },
+    {
+      "subset": "Eng_Eth",
+      "length_bin": 4,
+      "source": "exp5_encoder_exp2"
+    },
+    {
+      "subset": "Eng_Gha",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Gha",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Gha",
+      "length_bin": 2,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Gha",
+      "length_bin": 3,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Gha",
+      "length_bin": 4,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Ken",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Ken",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Ken",
+      "length_bin": 2,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Ken",
+      "length_bin": 3,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Ken",
+      "length_bin": 4,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Uga",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Uga",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Uga",
+      "length_bin": 2,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Uga",
+      "length_bin": 3,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Uga",
+      "length_bin": 4,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Lug_Uga",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Lug_Uga",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Lug_Uga",
+      "length_bin": 2,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Lug_Uga",
+      "length_bin": 3,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Lug_Uga",
+      "length_bin": 4,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Swa_Ken",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Swa_Ken",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Swa_Ken",
+      "length_bin": 2,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Swa_Ken",
+      "length_bin": 3,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Swa_Ken",
+      "length_bin": 4,
+      "source": "exp7_cluster"
+    }
+  ],
+  "test_choice_counts": {
+    "exp7_cluster": 2560,
+    "exp5_encoder_exp2": 58
+  },
+  "diff_vs_exp7": 17,
+  "notes": [
+    "Exp7 validation counterpart is the closest available lightgbm_fullcap OOF source.",
+    "This is a conservative exp7-base gate using only exp5 as override."
+  ]
+}

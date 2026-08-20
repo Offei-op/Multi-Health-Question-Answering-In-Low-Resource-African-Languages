@@ -1,0 +1,7 @@
+{
+  "rows": 6686,
+  "missing_answer_rows": 4854,
+  "rouge1_recomputed": 0.10399207748125319,
+  "rouge1_from_choice_file": 0.592474046904811,
+  "output": "C:\\Users\\Papa Offei\\Documents\\lalang\\reports\\local_candidate_regressor_submission\\val_oof_choices_with_answers.csv"
+}

@@ -1,0 +1,19 @@
+{
+  "experiment": "exp2_similarity_rule_analysis",
+  "rows": 6686,
+  "base_chosen_r1_fast": 0.5889304525640328,
+  "top1_r1_fast": 0.5394795443970752,
+  "oracle_r1_fast": 0.6840949279607131,
+  "best_rule": {
+    "rule": "Swa_Ken jump & top1_bi>=0.8 & margin<=0.02",
+    "triggered": 109,
+    "score": 0.5895609697738219,
+    "gain_vs_chosen": 0.0006305172097891276,
+    "trigger_delta_chosen_vs_top1": -0.038675578574771274,
+    "trigger_hurt_pct": 0.1559633027522936,
+    "trigger_win_pct": 0.12844036697247707,
+    "trigger_top1_r1": 0.863724058389441,
+    "trigger_chosen_r1": 0.8250484798146697,
+    "trigger_oracle_r1": 0.9676749635931529
+  }
+}

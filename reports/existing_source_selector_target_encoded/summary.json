@@ -1,0 +1,103 @@
+{
+  "experiment": "existing_source_selector_with_fold_safe_target_encoding",
+  "results": [
+    {
+      "label": "hgb",
+      "rouge1": 0.5975208075199556,
+      "choice_counts": {
+        "exp4_pairwise": 3612,
+        "exp8_ghana_grouped": 683,
+        "exp1_baseline_qa_doc": 599,
+        "exp2_rerank": 372,
+        "exp2_top1": 342,
+        "exp14_qonly": 281,
+        "exp1_finetuned_qa_doc": 256,
+        "exp3_top100_rerank": 202,
+        "exp10_lug_global": 111,
+        "exp5_encoder_exp2_rerank": 83,
+        "exp9_jina": 71,
+        "exp10_lug_specialized": 47,
+        "exp12_lug_merged": 27
+      },
+      "per_subset": {
+        "Aka_Gha": 0.324337,
+        "Amh_Eth": 0.198798,
+        "Eng_Eth": 0.670226,
+        "Eng_Gha": 0.312364,
+        "Eng_Ken": 0.817814,
+        "Eng_Uga": 0.868009,
+        "Lug_Uga": 0.709192,
+        "Swa_Ken": 0.839552
+      }
+    },
+    {
+      "label": "extra_trees",
+      "rouge1": 0.5982064328738139,
+      "choice_counts": {
+        "exp4_pairwise": 1930,
+        "exp1_baseline_qa_doc": 714,
+        "exp8_ghana_grouped": 696,
+        "exp2_top1": 629,
+        "exp1_finetuned_qa_doc": 552,
+        "exp3_top100_rerank": 494,
+        "exp5_encoder_exp2_rerank": 468,
+        "exp9_jina": 416,
+        "exp2_rerank": 360,
+        "exp14_qonly": 262,
+        "exp10_lug_specialized": 101,
+        "exp12_lug_merged": 53,
+        "exp10_lug_global": 11
+      },
+      "per_subset": {
+        "Aka_Gha": 0.323837,
+        "Amh_Eth": 0.19719,
+        "Eng_Eth": 0.671906,
+        "Eng_Gha": 0.314043,
+        "Eng_Ken": 0.82237,
+        "Eng_Uga": 0.868782,
+        "Lug_Uga": 0.70862,
+        "Swa_Ken": 0.84049
+      }
+    },
+    {
+      "label": "ensemble_te_avg",
+      "rouge1": 0.5983992526904078,
+      "choice_counts": {
+        "exp4_pairwise": 3319,
+        "exp8_ghana_grouped": 710,
+        "exp2_top1": 588,
+        "exp1_baseline_qa_doc": 583,
+        "exp1_finetuned_qa_doc": 348,
+        "exp3_top100_rerank": 230,
+        "exp14_qonly": 226,
+        "exp5_encoder_exp2_rerank": 219,
+        "exp9_jina": 163,
+        "exp2_rerank": 136,
+        "exp10_lug_specialized": 90,
+        "exp12_lug_merged": 63,
+        "exp10_lug_global": 11
+      },
+      "per_subset": {
+        "Aka_Gha": 0.324961,
+        "Amh_Eth": 0.200876,
+        "Eng_Eth": 0.669562,
+        "Eng_Gha": 0.313059,
+        "Eng_Ken": 0.819044,
+        "Eng_Uga": 0.869551,
+        "Lug_Uga": 0.710076,
+        "Swa_Ken": 0.839543
+      }
+    }
+  ],
+  "best": {
+    "label": "ensemble_te_avg",
+    "rouge1": 0.5983992526904078,
+    "gain_vs_best_single": 0.007981820922394078,
+    "gain_vs_exp2_rerank": 0.009182624343593293,
+    "top_choice": "exp4_pairwise"
+  },
+  "notes": [
+    "Target encodings are computed inside each GroupKFold split from training IDs only.",
+    "This tests whether source/subset priors improve local no-Modal source selection."
+  ]
+}

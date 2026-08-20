@@ -1,0 +1,36 @@
+{
+  "baseline_exp2": 0.5892166283468145,
+  "baseline_hybrid": 0.6065232342601322,
+  "cluster_fast": 0.5164699179116768,
+  "oracle_fast_vs_hybrid": 0.6245958706481922,
+  "fast_beats_hybrid_rate": 0.0717918037690697,
+  "best": {
+    "score": 0.6224808076839063,
+    "gain_vs_hybrid": 0.01595757342377413,
+    "use_fast_rate": 0.12503739156446306,
+    "use_fast_count": 836,
+    "per_subset": {
+      "Aka_Gha": 0.325431,
+      "Amh_Eth": 0.197348,
+      "Eng_Eth": 0.685493,
+      "Eng_Gha": 0.309539,
+      "Eng_Ken": 0.854441,
+      "Eng_Uga": 0.901727,
+      "Lug_Uga": 0.806415,
+      "Swa_Ken": 0.853817
+    },
+    "model": "hgb_pred_gain",
+    "scope": "all_sweep",
+    "threshold": 0.004963183600921184
+  },
+  "target_subsets": [
+    "Lug_Uga",
+    "Eng_Uga",
+    "Eng_Ken",
+    "Swa_Ken"
+  ],
+  "notes": [
+    "Threshold-sweep rows are diagnostic and may be optimistic because the threshold is chosen on OOF validation predictions.",
+    "The zero-threshold rows are the cleaner read of whether predicted gain is calibrated."
+  ]
+}

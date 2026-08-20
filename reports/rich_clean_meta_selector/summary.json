@@ -1,0 +1,143 @@
+{
+  "baseline_exp2": 0.5892166283468145,
+  "baseline_hybrid": 0.6065232342601322,
+  "clean_oracle": 0.6479322858935932,
+  "best": {
+    "model": "ensemble",
+    "score": 0.6227089712249555,
+    "gain_vs_exp2": 0.03349234287814096,
+    "gain_vs_hybrid": 0.016185736964823283,
+    "choice_counts": {
+      "exp2_rerank": 2875,
+      "cluster_noleak": 1667,
+      "cluster_fast": 1323,
+      "exp2_top1": 821
+    },
+    "per_subset": {
+      "Aka_Gha": 0.327302,
+      "Amh_Eth": 0.191737,
+      "Eng_Eth": 0.686277,
+      "Eng_Gha": 0.307692,
+      "Eng_Ken": 0.861839,
+      "Eng_Uga": 0.902542,
+      "Lug_Uga": 0.805827,
+      "Swa_Ken": 0.85356
+    }
+  },
+  "results": [
+    {
+      "model": "hgb",
+      "score": 0.6221661912064367,
+      "gain_vs_exp2": 0.03294956285962214,
+      "gain_vs_hybrid": 0.015642956946304465,
+      "choice_counts": {
+        "exp2_rerank": 2361,
+        "exp2_top1": 2235,
+        "cluster_fast": 1274,
+        "cluster_noleak": 816
+      },
+      "per_subset": {
+        "Aka_Gha": 0.32519,
+        "Amh_Eth": 0.193066,
+        "Eng_Eth": 0.687772,
+        "Eng_Gha": 0.305415,
+        "Eng_Ken": 0.862785,
+        "Eng_Uga": 0.90315,
+        "Lug_Uga": 0.805929,
+        "Swa_Ken": 0.85028
+      }
+    },
+    {
+      "model": "extra_trees",
+      "score": 0.6190059358902364,
+      "gain_vs_exp2": 0.029789307543421906,
+      "gain_vs_hybrid": 0.012482701630104232,
+      "choice_counts": {
+        "exp2_rerank": 2855,
+        "cluster_noleak": 1654,
+        "cluster_fast": 1373,
+        "exp2_top1": 804
+      },
+      "per_subset": {
+        "Aka_Gha": 0.324405,
+        "Amh_Eth": 0.18765,
+        "Eng_Eth": 0.681555,
+        "Eng_Gha": 0.307361,
+        "Eng_Ken": 0.862271,
+        "Eng_Uga": 0.898101,
+        "Lug_Uga": 0.800631,
+        "Swa_Ken": 0.844119
+      }
+    },
+    {
+      "model": "random_forest",
+      "score": 0.6213007924297795,
+      "gain_vs_exp2": 0.032084164082964994,
+      "gain_vs_hybrid": 0.01477755816964732,
+      "choice_counts": {
+        "exp2_rerank": 2736,
+        "cluster_noleak": 1602,
+        "cluster_fast": 1279,
+        "exp2_top1": 1069
+      },
+      "per_subset": {
+        "Aka_Gha": 0.326695,
+        "Amh_Eth": 0.19181,
+        "Eng_Eth": 0.684618,
+        "Eng_Gha": 0.308225,
+        "Eng_Ken": 0.861556,
+        "Eng_Uga": 0.902806,
+        "Lug_Uga": 0.799035,
+        "Swa_Ken": 0.847742
+      }
+    },
+    {
+      "model": "ensemble",
+      "score": 0.6227089712249555,
+      "gain_vs_exp2": 0.03349234287814096,
+      "gain_vs_hybrid": 0.016185736964823283,
+      "choice_counts": {
+        "exp2_rerank": 2875,
+        "cluster_noleak": 1667,
+        "cluster_fast": 1323,
+        "exp2_top1": 821
+      },
+      "per_subset": {
+        "Aka_Gha": 0.327302,
+        "Amh_Eth": 0.191737,
+        "Eng_Eth": 0.686277,
+        "Eng_Gha": 0.307692,
+        "Eng_Ken": 0.861839,
+        "Eng_Uga": 0.902542,
+        "Lug_Uga": 0.805827,
+        "Swa_Ken": 0.85356
+      }
+    },
+    {
+      "model": "weighted_ensemble",
+      "score": 0.6226594566933394,
+      "gain_vs_exp2": 0.0334428283465249,
+      "gain_vs_hybrid": 0.016136222433207226,
+      "choice_counts": {
+        "exp2_rerank": 2835,
+        "cluster_noleak": 1656,
+        "cluster_fast": 1375,
+        "exp2_top1": 820
+      },
+      "per_subset": {
+        "Aka_Gha": 0.326495,
+        "Amh_Eth": 0.193702,
+        "Eng_Eth": 0.687655,
+        "Eng_Gha": 0.306398,
+        "Eng_Ken": 0.865303,
+        "Eng_Uga": 0.903149,
+        "Lug_Uga": 0.805651,
+        "Swa_Ken": 0.849868
+      }
+    }
+  ],
+  "notes": [
+    "All features are drawn from clean deployable sources and OOF validation predictions.",
+    "No validation reference-length or target columns are used as features."
+  ]
+}

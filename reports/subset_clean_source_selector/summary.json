@@ -1,0 +1,94 @@
+{
+  "loaded_sources": [
+    "exp2_top1",
+    "exp2_rerank",
+    "cluster_fast",
+    "cluster_noleak"
+  ],
+  "missing_sources": [],
+  "best": {
+    "model": "subset_ensemble",
+    "score": 0.605265968813137,
+    "choice_counts": {
+      "exp2_rerank": 3083,
+      "cluster_fast": 1599,
+      "cluster_noleak": 1078,
+      "exp2_top1": 926
+    },
+    "per_subset": {
+      "Aka_Gha": 0.322923,
+      "Amh_Eth": 0.193023,
+      "Eng_Eth": 0.67574,
+      "Eng_Gha": 0.306609,
+      "Eng_Ken": 0.812825,
+      "Eng_Uga": 0.877343,
+      "Lug_Uga": 0.768819,
+      "Swa_Ken": 0.82993
+    }
+  },
+  "results": [
+    {
+      "model": "subset_hgb",
+      "score": 0.6039838451099379,
+      "choice_counts": {
+        "exp2_rerank": 3113,
+        "cluster_fast": 1538,
+        "exp2_top1": 1123,
+        "cluster_noleak": 912
+      },
+      "per_subset": {
+        "Aka_Gha": 0.31976,
+        "Amh_Eth": 0.190433,
+        "Eng_Eth": 0.674525,
+        "Eng_Gha": 0.304922,
+        "Eng_Ken": 0.806571,
+        "Eng_Uga": 0.878966,
+        "Lug_Uga": 0.766817,
+        "Swa_Ken": 0.830103
+      }
+    },
+    {
+      "model": "subset_extra_trees",
+      "score": 0.6040377810132422,
+      "choice_counts": {
+        "exp2_rerank": 2928,
+        "cluster_fast": 1493,
+        "cluster_noleak": 1196,
+        "exp2_top1": 1069
+      },
+      "per_subset": {
+        "Aka_Gha": 0.322485,
+        "Amh_Eth": 0.192999,
+        "Eng_Eth": 0.674018,
+        "Eng_Gha": 0.305304,
+        "Eng_Ken": 0.818983,
+        "Eng_Uga": 0.875799,
+        "Lug_Uga": 0.760469,
+        "Swa_Ken": 0.833729
+      }
+    },
+    {
+      "model": "subset_ensemble",
+      "score": 0.605265968813137,
+      "choice_counts": {
+        "exp2_rerank": 3083,
+        "cluster_fast": 1599,
+        "cluster_noleak": 1078,
+        "exp2_top1": 926
+      },
+      "per_subset": {
+        "Aka_Gha": 0.322923,
+        "Amh_Eth": 0.193023,
+        "Eng_Eth": 0.67574,
+        "Eng_Gha": 0.306609,
+        "Eng_Ken": 0.812825,
+        "Eng_Uga": 0.877343,
+        "Lug_Uga": 0.768819,
+        "Swa_Ken": 0.82993
+      }
+    }
+  ],
+  "baseline_exp2_rerank": 0.5892166283468145,
+  "clean_global_selector": 0.6041607089218853,
+  "clean_oracle": 0.6479322858935932
+}

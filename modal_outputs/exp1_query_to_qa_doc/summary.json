@@ -1,0 +1,93 @@
+{
+  "experiment": "query_to_qa_doc_bgem3_lora",
+  "gpu": "L40S",
+  "epochs": 2,
+  "batch_size": 32,
+  "gradient_accumulation": 2,
+  "effective_batch": 64,
+  "learning_rate": 1.5e-05,
+  "lora_r": 32,
+  "max_seq_length": 512,
+  "loss": "CachedMultipleNegativesRankingLoss",
+  "train_seconds": 2703.9505562782288,
+  "baseline": {
+    "label": "baseline_query_to_qa_doc",
+    "top1_r1": 0.445531304063734,
+    "oracle20_r1": 0.643655891217406,
+    "per_subset": {
+      "Aka_Gha": {
+        "top1_r1": 0.2764,
+        "oracle20_r1": 0.3767
+      },
+      "Amh_Eth": {
+        "top1_r1": 0.1384,
+        "oracle20_r1": 0.2803
+      },
+      "Eng_Eth": {
+        "top1_r1": 0.4971,
+        "oracle20_r1": 0.7127
+      },
+      "Eng_Gha": {
+        "top1_r1": 0.2868,
+        "oracle20_r1": 0.3747
+      },
+      "Eng_Ken": {
+        "top1_r1": 0.7283,
+        "oracle20_r1": 0.8955
+      },
+      "Eng_Uga": {
+        "top1_r1": 0.6131,
+        "oracle20_r1": 0.904
+      },
+      "Lug_Uga": {
+        "top1_r1": 0.4257,
+        "oracle20_r1": 0.7223
+      },
+      "Swa_Ken": {
+        "top1_r1": 0.6391,
+        "oracle20_r1": 0.8735
+      }
+    }
+  },
+  "finetuned": {
+    "label": "finetuned_query_to_qa_doc",
+    "top1_r1": 0.45403765213713065,
+    "oracle20_r1": 0.6548019787184409,
+    "per_subset": {
+      "Aka_Gha": {
+        "top1_r1": 0.278,
+        "oracle20_r1": 0.3814
+      },
+      "Amh_Eth": {
+        "top1_r1": 0.146,
+        "oracle20_r1": 0.2767
+      },
+      "Eng_Eth": {
+        "top1_r1": 0.4918,
+        "oracle20_r1": 0.7237
+      },
+      "Eng_Gha": {
+        "top1_r1": 0.279,
+        "oracle20_r1": 0.3732
+      },
+      "Eng_Ken": {
+        "top1_r1": 0.6671,
+        "oracle20_r1": 0.9055
+      },
+      "Eng_Uga": {
+        "top1_r1": 0.6539,
+        "oracle20_r1": 0.9093
+      },
+      "Lug_Uga": {
+        "top1_r1": 0.4647,
+        "oracle20_r1": 0.7744
+      },
+      "Swa_Ken": {
+        "top1_r1": 0.6101,
+        "oracle20_r1": 0.8917
+      }
+    }
+  },
+  "delta_top1_r1": 0.008506348073396675,
+  "delta_oracle20_r1": 0.011146087501034962
+}

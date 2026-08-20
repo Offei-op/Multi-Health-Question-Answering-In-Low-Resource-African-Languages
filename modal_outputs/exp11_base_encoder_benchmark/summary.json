@@ -1,0 +1,153 @@
+{
+  "experiment": "exp11_base_encoder_benchmark",
+  "k": 50,
+  "max_seq_length": 256,
+  "train_rows": 29814,
+  "val_rows": 6686,
+  "models": {
+    "bge_m3_base": {
+      "model_name": "BAAI/bge-m3",
+      "top1_rouge1": 0.49846948014743486,
+      "oracle_rouge1": 0.6754309123022352,
+      "seconds": 44.69831204414368,
+      "per_subset": {
+        "Aka_Gha": {
+          "top1_rouge1": 0.28240396016691854,
+          "oracle_rouge1": 0.3934762619285527,
+          "count": 1114
+        },
+        "Amh_Eth": {
+          "top1_rouge1": 0.16315041954127774,
+          "oracle_rouge1": 0.30830608619241506,
+          "count": 462
+        },
+        "Eng_Eth": {
+          "top1_rouge1": 0.5469010440161853,
+          "oracle_rouge1": 0.7493461888357091,
+          "count": 564
+        },
+        "Eng_Gha": {
+          "top1_rouge1": 0.2825914145840942,
+          "oracle_rouge1": 0.3854160357552903,
+          "count": 1104
+        },
+        "Eng_Ken": {
+          "top1_rouge1": 0.7810454510329977,
+          "oracle_rouge1": 0.9185490348769356,
+          "count": 390
+        },
+        "Eng_Uga": {
+          "top1_rouge1": 0.7460903876873639,
+          "oracle_rouge1": 0.9355700528534144,
+          "count": 1688
+        },
+        "Lug_Uga": {
+          "top1_rouge1": 0.42724912862600295,
+          "oracle_rouge1": 0.7990196389982801,
+          "count": 846
+        },
+        "Swa_Ken": {
+          "top1_rouge1": 0.7662147975849911,
+          "oracle_rouge1": 0.9142539974037579,
+          "count": 518
+        }
+      }
+    },
+    "multilingual_e5_base": {
+      "model_name": "intfloat/multilingual-e5-base",
+      "top1_rouge1": 0.4875018420822146,
+      "oracle_rouge1": 0.6768323967182054,
+      "seconds": 27.46133780479431,
+      "per_subset": {
+        "Aka_Gha": {
+          "top1_rouge1": 0.2767079868610606,
+          "oracle_rouge1": 0.39579082218371503,
+          "count": 1114
+        },
+        "Amh_Eth": {
+          "top1_rouge1": 0.16591601978603368,
+          "oracle_rouge1": 0.3047298029687088,
+          "count": 462
+        },
+        "Eng_Eth": {
+          "top1_rouge1": 0.5552252524502024,
+          "oracle_rouge1": 0.7486053509022882,
+          "count": 564
+        },
+        "Eng_Gha": {
+          "top1_rouge1": 0.28581379153925246,
+          "oracle_rouge1": 0.3859043771823967,
+          "count": 1104
+        },
+        "Eng_Ken": {
+          "top1_rouge1": 0.7862196892692636,
+          "oracle_rouge1": 0.9186749955775178,
+          "count": 390
+        },
+        "Eng_Uga": {
+          "top1_rouge1": 0.6999418416962724,
+          "oracle_rouge1": 0.9347250035417275,
+          "count": 1688
+        },
+        "Lug_Uga": {
+          "top1_rouge1": 0.457489494804358,
+          "oracle_rouge1": 0.8170523759466763,
+          "count": 846
+        },
+        "Swa_Ken": {
+          "top1_rouge1": 0.7156029521491531,
+          "oracle_rouge1": 0.9035290443067695,
+          "count": 518
+        }
+      }
+    },
+    "multilingual_e5_large": {
+      "model_name": "intfloat/multilingual-e5-large",
+      "top1_rouge1": 0.5048918014240319,
+      "oracle_rouge1": 0.6786129826422103,
+      "seconds": 41.293991565704346,
+      "per_subset": {
+        "Aka_Gha": {
+          "top1_rouge1": 0.27409383914192753,
+          "oracle_rouge1": 0.39475679843763345,
+          "count": 1114
+        },
+        "Amh_Eth": {
+          "top1_rouge1": 0.16054737042820996,
+          "oracle_rouge1": 0.3043702739455134,
+          "count": 462
+        },
+        "Eng_Eth": {
+          "top1_rouge1": 0.5607431164354776,
+          "oracle_rouge1": 0.7489559467258885,
+          "count": 564
+        },
+        "Eng_Gha": {
+          "top1_rouge1": 0.28393530157974334,
+          "oracle_rouge1": 0.386869525689101,
+          "count": 1104
+        },
+        "Eng_Ken": {
+          "top1_rouge1": 0.8036780925811836,
+          "oracle_rouge1": 0.9188351175877304,
+          "count": 390
+        },
+        "Eng_Uga": {
+          "top1_rouge1": 0.7394486278951249,
+          "oracle_rouge1": 0.9359560255542213,
+          "count": 1688
+        },
+        "Lug_Uga": {
+          "top1_rouge1": 0.48765316882277043,
+          "oracle_rouge1": 0.8249181598082022,
+          "count": 846
+        },
+        "Swa_Ken": {
+          "top1_rouge1": 0.7573188242235418,
+          "oracle_rouge1": 0.9096388444340126,
+          "count": 518
+        }
+      }
+    }
+  }
+}

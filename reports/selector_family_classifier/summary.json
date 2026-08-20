@@ -1,0 +1,135 @@
+{
+  "family_oracle": 0.6338465263448813,
+  "current_best": 0.6258761046358958,
+  "best": {
+    "model": "hgb",
+    "score": 0.6237827026919157,
+    "gain_vs_exp2": 0.03456607434510117,
+    "gain_vs_family_meta_subset_hybrid": -0.002093401943980111,
+    "accuracy": 0.8991923422075979,
+    "choice_counts": {
+      "meta_gate": 6224,
+      "rich_meta": 200,
+      "fast_gate": 162,
+      "global_clean": 83,
+      "subset_clean": 13,
+      "residual": 4
+    },
+    "per_subset": {
+      "Aka_Gha": 0.326431,
+      "Amh_Eth": 0.197009,
+      "Eng_Eth": 0.687128,
+      "Eng_Gha": 0.308604,
+      "Eng_Ken": 0.85699,
+      "Eng_Uga": 0.903027,
+      "Lug_Uga": 0.810836,
+      "Swa_Ken": 0.855613
+    }
+  },
+  "results": [
+    {
+      "model": "hgb",
+      "score": 0.6237827026919157,
+      "gain_vs_exp2": 0.03456607434510117,
+      "gain_vs_family_meta_subset_hybrid": -0.002093401943980111,
+      "accuracy": 0.8991923422075979,
+      "choice_counts": {
+        "meta_gate": 6224,
+        "rich_meta": 200,
+        "fast_gate": 162,
+        "global_clean": 83,
+        "subset_clean": 13,
+        "residual": 4
+      },
+      "per_subset": {
+        "Aka_Gha": 0.326431,
+        "Amh_Eth": 0.197009,
+        "Eng_Eth": 0.687128,
+        "Eng_Gha": 0.308604,
+        "Eng_Ken": 0.85699,
+        "Eng_Uga": 0.903027,
+        "Lug_Uga": 0.810836,
+        "Swa_Ken": 0.855613
+      }
+    },
+    {
+      "model": "extra_trees",
+      "score": 0.6073013809165413,
+      "gain_vs_exp2": 0.018084752569726747,
+      "gain_vs_family_meta_subset_hybrid": -0.018574723719354536,
+      "accuracy": 0.8544720311097816,
+      "choice_counts": {
+        "meta_gate": 5118,
+        "fast_gate": 487,
+        "rich_meta": 473,
+        "global_clean": 386,
+        "subset_clean": 195,
+        "residual": 27
+      },
+      "per_subset": {
+        "Aka_Gha": 0.323249,
+        "Amh_Eth": 0.185497,
+        "Eng_Eth": 0.678086,
+        "Eng_Gha": 0.305011,
+        "Eng_Ken": 0.818883,
+        "Eng_Uga": 0.883169,
+        "Lug_Uga": 0.768341,
+        "Swa_Ken": 0.840299
+      }
+    },
+    {
+      "model": "random_forest",
+      "score": 0.6129663872728095,
+      "gain_vs_exp2": 0.023749758925994957,
+      "gain_vs_family_meta_subset_hybrid": -0.012909717363086326,
+      "accuracy": 0.8629973078073586,
+      "choice_counts": {
+        "meta_gate": 5190,
+        "fast_gate": 502,
+        "rich_meta": 476,
+        "global_clean": 364,
+        "subset_clean": 133,
+        "residual": 21
+      },
+      "per_subset": {
+        "Aka_Gha": 0.323571,
+        "Amh_Eth": 0.185374,
+        "Eng_Eth": 0.68177,
+        "Eng_Gha": 0.305642,
+        "Eng_Ken": 0.838543,
+        "Eng_Uga": 0.891721,
+        "Lug_Uga": 0.782026,
+        "Swa_Ken": 0.84246
+      }
+    },
+    {
+      "model": "vote_ensemble",
+      "score": 0.6130855243921589,
+      "gain_vs_exp2": 0.023868896045344368,
+      "gain_vs_family_meta_subset_hybrid": -0.012790580243736915,
+      "accuracy": 0.8640442716123242,
+      "choice_counts": {
+        "meta_gate": 5222,
+        "fast_gate": 483,
+        "rich_meta": 468,
+        "global_clean": 361,
+        "subset_clean": 131,
+        "residual": 21
+      },
+      "per_subset": {
+        "Aka_Gha": 0.323387,
+        "Amh_Eth": 0.185456,
+        "Eng_Eth": 0.681734,
+        "Eng_Gha": 0.305545,
+        "Eng_Ken": 0.837801,
+        "Eng_Uga": 0.892089,
+        "Lug_Uga": 0.782923,
+        "Swa_Ken": 0.84246
+      }
+    }
+  ],
+  "notes": [
+    "This predicts the oracle selector family directly.",
+    "Scores are computed from held-out/OFF family outputs; no reference text is used as a prediction feature."
+  ]
+}

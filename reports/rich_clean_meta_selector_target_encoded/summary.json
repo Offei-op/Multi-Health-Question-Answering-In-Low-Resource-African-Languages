@@ -1,0 +1,143 @@
+{
+  "baseline_exp2": 0.5892166283468145,
+  "plain_rich_best": 0.6227089712249555,
+  "clean_oracle": 0.6479322858935932,
+  "best": {
+    "model": "weighted_ensemble_te",
+    "score": 0.622026867988561,
+    "gain_vs_exp2": 0.03281023964174645,
+    "gain_vs_plain_rich": -0.0006821032363945045,
+    "choice_counts": {
+      "exp2_rerank": 2968,
+      "cluster_fast": 1490,
+      "cluster_noleak": 1459,
+      "exp2_top1": 769
+    },
+    "per_subset": {
+      "Aka_Gha": 0.325273,
+      "Amh_Eth": 0.193576,
+      "Eng_Eth": 0.684562,
+      "Eng_Gha": 0.305255,
+      "Eng_Ken": 0.8619,
+      "Eng_Uga": 0.904307,
+      "Lug_Uga": 0.802037,
+      "Swa_Ken": 0.854934
+    }
+  },
+  "results": [
+    {
+      "model": "hgb_te",
+      "score": 0.6213138648872539,
+      "gain_vs_exp2": 0.03209723654043939,
+      "gain_vs_plain_rich": -0.0013951063377015682,
+      "choice_counts": {
+        "exp2_rerank": 3045,
+        "cluster_fast": 1660,
+        "exp2_top1": 1028,
+        "cluster_noleak": 953
+      },
+      "per_subset": {
+        "Aka_Gha": 0.324759,
+        "Amh_Eth": 0.192334,
+        "Eng_Eth": 0.683993,
+        "Eng_Gha": 0.304143,
+        "Eng_Ken": 0.862603,
+        "Eng_Uga": 0.903492,
+        "Lug_Uga": 0.802653,
+        "Swa_Ken": 0.852057
+      }
+    },
+    {
+      "model": "extra_trees_te",
+      "score": 0.6191689594223867,
+      "gain_vs_exp2": 0.02995233107557216,
+      "gain_vs_plain_rich": -0.0035400118025687988,
+      "choice_counts": {
+        "exp2_rerank": 2929,
+        "cluster_noleak": 1567,
+        "cluster_fast": 1358,
+        "exp2_top1": 832
+      },
+      "per_subset": {
+        "Aka_Gha": 0.325104,
+        "Amh_Eth": 0.192243,
+        "Eng_Eth": 0.682411,
+        "Eng_Gha": 0.30711,
+        "Eng_Ken": 0.85903,
+        "Eng_Uga": 0.898045,
+        "Lug_Uga": 0.796691,
+        "Swa_Ken": 0.849286
+      }
+    },
+    {
+      "model": "random_forest_te",
+      "score": 0.6200041503065354,
+      "gain_vs_exp2": 0.030787521959720898,
+      "gain_vs_plain_rich": -0.002704820918420059,
+      "choice_counts": {
+        "exp2_rerank": 2774,
+        "cluster_noleak": 1525,
+        "cluster_fast": 1455,
+        "exp2_top1": 932
+      },
+      "per_subset": {
+        "Aka_Gha": 0.325151,
+        "Amh_Eth": 0.192999,
+        "Eng_Eth": 0.683696,
+        "Eng_Gha": 0.305966,
+        "Eng_Ken": 0.858728,
+        "Eng_Uga": 0.900898,
+        "Lug_Uga": 0.798248,
+        "Swa_Ken": 0.848716
+      }
+    },
+    {
+      "model": "ensemble_te",
+      "score": 0.6220058317959013,
+      "gain_vs_exp2": 0.03278920344908676,
+      "gain_vs_plain_rich": -0.0007031394290542003,
+      "choice_counts": {
+        "exp2_rerank": 2914,
+        "cluster_noleak": 1531,
+        "cluster_fast": 1471,
+        "exp2_top1": 770
+      },
+      "per_subset": {
+        "Aka_Gha": 0.325553,
+        "Amh_Eth": 0.193343,
+        "Eng_Eth": 0.685234,
+        "Eng_Gha": 0.306371,
+        "Eng_Ken": 0.863559,
+        "Eng_Uga": 0.904243,
+        "Lug_Uga": 0.800083,
+        "Swa_Ken": 0.853312
+      }
+    },
+    {
+      "model": "weighted_ensemble_te",
+      "score": 0.622026867988561,
+      "gain_vs_exp2": 0.03281023964174645,
+      "gain_vs_plain_rich": -0.0006821032363945045,
+      "choice_counts": {
+        "exp2_rerank": 2968,
+        "cluster_fast": 1490,
+        "cluster_noleak": 1459,
+        "exp2_top1": 769
+      },
+      "per_subset": {
+        "Aka_Gha": 0.325273,
+        "Amh_Eth": 0.193576,
+        "Eng_Eth": 0.684562,
+        "Eng_Gha": 0.305255,
+        "Eng_Ken": 0.8619,
+        "Eng_Uga": 0.904307,
+        "Lug_Uga": 0.802037,
+        "Swa_Ken": 0.854934
+      }
+    }
+  ],
+  "notes": [
+    "Target encodings are fold-safe: validation fold encodings are computed from training IDs only.",
+    "No target/reference-derived features are used at prediction time."
+  ]
+}

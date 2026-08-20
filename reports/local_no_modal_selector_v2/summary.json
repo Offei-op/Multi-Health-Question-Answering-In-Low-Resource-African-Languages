@@ -1,0 +1,16 @@
+{
+  "base_exp2_rerank_val_r1": 0.5892166283468145,
+  "best_gate": {
+    "pred_t": 0.48,
+    "max_rank": 5.0,
+    "min_sources": 4.0,
+    "require_exp2_pool": 1.0,
+    "switch_n": 1030.0,
+    "score": 0.5889455275749736,
+    "gain": -0.0002711007718408931,
+    "mean_actual_gain_on_switched": -0.00175978617526979
+  },
+  "made_submission": null,
+  "diff_vs_exp6_reranker": null,
+  "diff_vs_exp7_cluster": null
+}

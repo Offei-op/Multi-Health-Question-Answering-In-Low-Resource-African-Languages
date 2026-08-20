@@ -1,0 +1,98 @@
+{
+  "current_best": 0.6258761046358958,
+  "family_oracle": 0.6338465263448811,
+  "oracle_gap_remaining": 0.00797042170898532,
+  "miss_rate": 0.09303021238408615,
+  "miss_summary_by_subset": [
+    {
+      "subset": "Eng_Gha",
+      "rows": 1104,
+      "base": 0.31024410250325724,
+      "oracle": 0.3227760801747575,
+      "oracle_gain": 0.012531977671500294,
+      "switch_rate": 0.17391304347826086
+    },
+    {
+      "subset": "Amh_Eth",
+      "rows": 462,
+      "base": 0.19734811740192876,
+      "oracle": 0.20875587024405204,
+      "oracle_gain": 0.011407752842123255,
+      "switch_rate": 0.13852813852813853
+    },
+    {
+      "subset": "Eng_Eth",
+      "rows": 564,
+      "base": 0.687572050671966,
+      "oracle": 0.6971816547139634,
+      "oracle_gain": 0.009609604041997458,
+      "switch_rate": 0.07092198581560284
+    },
+    {
+      "subset": "Swa_Ken",
+      "rows": 518,
+      "base": 0.8626808073933665,
+      "oracle": 0.8717965639946128,
+      "oracle_gain": 0.009115756601246309,
+      "switch_rate": 0.03861003861003861
+    },
+    {
+      "subset": "Lug_Uga",
+      "rows": 846,
+      "base": 0.8099479551374374,
+      "oracle": 0.818462957764543,
+      "oracle_gain": 0.0085150026271056,
+      "switch_rate": 0.05319148936170213
+    },
+    {
+      "subset": "Aka_Gha",
+      "rows": 1114,
+      "base": 0.32889562843420017,
+      "oracle": 0.33644289271616257,
+      "oracle_gain": 0.0075472642819623915,
+      "switch_rate": 0.1696588868940754
+    },
+    {
+      "subset": "Eng_Uga",
+      "rows": 1688,
+      "base": 0.9044176795423533,
+      "oracle": 0.9085791936395677,
+      "oracle_gain": 0.0041615140972143414,
+      "switch_rate": 0.031990521327014215
+    },
+    {
+      "subset": "Eng_Ken",
+      "rows": 390,
+      "base": 0.8666699440874253,
+      "oracle": 0.8702771116669413,
+      "oracle_gain": 0.0036071675795161474,
+      "switch_rate": 0.046153846153846156
+    }
+  ],
+  "best": {
+    "model": "extra_trees_switch_proba",
+    "mode": "switch_to_oracle_diagnostic",
+    "threshold_quantile": 0.6,
+    "threshold": 0.07400687783956528,
+    "score": 0.6338465263448811,
+    "gain_vs_current_best": 0.00797042170898532,
+    "gain_vs_exp2": 0.0446298979980666,
+    "switch_rate": 0.3999401734968591,
+    "switch_count": 2674,
+    "auc": 0.9338606312940637,
+    "per_subset": {
+      "Aka_Gha": 0.336443,
+      "Amh_Eth": 0.208756,
+      "Eng_Eth": 0.697182,
+      "Eng_Gha": 0.322776,
+      "Eng_Ken": 0.870277,
+      "Eng_Uga": 0.908579,
+      "Lug_Uga": 0.818463,
+      "Swa_Ken": 0.871797
+    }
+  },
+  "notes": [
+    "switch_to_pred_family is deployable-style and only switches to the model-predicted best family.",
+    "switch_to_oracle_diagnostic is not deployable; it tests whether switch detection is useful if target family were known."
+  ]
+}

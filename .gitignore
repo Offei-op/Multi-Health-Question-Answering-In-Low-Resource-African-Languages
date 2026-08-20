@@ -1,0 +1,55 @@
+# The repository stores source, notebooks, metadata, summaries, and documentation.
+# Large data/model artifacts stay local and are listed in LOCAL_ARTIFACTS.md.
+
+# Raw datasets and generated prediction tables
+Train.csv
+Val.csv
+Test.csv
+*.csv
+
+# Model weights, optimizer/checkpoint state, caches, and archives
+*.safetensors
+*.pt
+*.bin
+*.pkl
+*.zip
+*.parquet
+*.onnx
+
+# Rendered/binary review artifacts
+*.docx
+*.xlsx
+*.html
+
+# Python and notebook transient state
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environment and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Experiment output directories that contain generated non-summary files.
+# summary.json remains tracked because it is the canonical metric record.
+modal_outputs/**
+!modal_outputs/**/
+!modal_outputs/**/summary.json
+!modal_outputs/**/local_blend_summary.json
+reports/**
+!reports/**/
+!reports/**/summary.json
+
+# Preserve source code, notebooks, JSON metadata, and Markdown docs in those trees.
+!modal_outputs/**/*.py
+!modal_outputs/**/*.ipynb
+!modal_outputs/**/*.json
+!reports/**/*.py
+!reports/**/*.ipynb
+!reports/**/*.json
+!reports/**/*.md
+!reports/**/*.txt

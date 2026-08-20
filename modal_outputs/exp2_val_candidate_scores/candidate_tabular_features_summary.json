@@ -1,0 +1,8 @@
+{
+  "rows": 334300,
+  "ids": 6686,
+  "path": "/data/exp2_val_candidate_scores/candidate_tabular_features.csv",
+  "base_rerank_r1": 0.5889304525640328,
+  "base_top1_r1": 0.5394795443970752,
+  "oracle_r1": 0.6840949279607131
+}

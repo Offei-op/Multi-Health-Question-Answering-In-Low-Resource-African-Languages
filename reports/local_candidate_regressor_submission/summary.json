@@ -1,0 +1,37 @@
+{
+  "metrics": {
+    "rouge1": 0.592474046904811,
+    "per_subset": {
+      "Aka_Gha": 0.322646,
+      "Amh_Eth": 0.19166,
+      "Eng_Eth": 0.669888,
+      "Eng_Gha": 0.30663,
+      "Eng_Ken": 0.823142,
+      "Eng_Uga": 0.86516,
+      "Lug_Uga": 0.691886,
+      "Swa_Ken": 0.830541
+    },
+    "gain_vs_rerank": 0.0032574185579964388,
+    "best_margin_gate": {
+      "pred_margin_threshold": 0.01,
+      "score": 0.592785038263852,
+      "gain_vs_rerank": 0.003854585699819224,
+      "switch_n": 1501.0,
+      "mean_actual_gain_switched": 0.01716972684143335
+    },
+    "baseline": {
+      "top1": 0.5395458277838778,
+      "rerank": 0.5892166283468145
+    }
+  },
+  "model_params": {
+    "max_iter": 360,
+    "learning_rate": 0.035,
+    "max_leaf_nodes": 31,
+    "l2_regularization": 0.04,
+    "random_state": 24
+  },
+  "submission": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_submissions\\submission_local_candidate_regressor_hgb.csv",
+  "changed_vs_exp6": 340,
+  "test_gate_switch_n": 340
+}

@@ -1,0 +1,1 @@
+{"repos": [{"repoId": "bigscience/mt0-large", "repoType": "model", "commitHash": "c2cdb7dbabf83140e288e60f73a936ed9c5b9ed6", "filePaths": ["special_tokens_map.json", "spiece.model", "tokenizer.json", "model.safetensors", "tokenizer_config.json", "config.json"]}]}

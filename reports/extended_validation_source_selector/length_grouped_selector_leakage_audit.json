@@ -1,0 +1,85 @@
+{
+  "feature_leakage_audit": {
+    "winning_runtime_features": [
+      "subset",
+      "input_char_len"
+    ],
+    "test_available": true,
+    "reference_or_output_required_at_test": false,
+    "prediction_text_required_for_winning_feature": false
+  },
+  "target_leakage_audit": {
+    "full_validation_group_pick_score": 0.630320475330297,
+    "uses_full_validation_target_r1_to_pick_group_selectors": true,
+    "fixed_config_oof_group_pick_score": 0.6277780774138787,
+    "nested_config_oof_score": 0.6268037492171863,
+    "fixed_config_fold_scores": [
+      {
+        "fold": 1,
+        "score": 0.6331318433845429
+      },
+      {
+        "fold": 2,
+        "score": 0.6295372754812913
+      },
+      {
+        "fold": 3,
+        "score": 0.6247180629261632
+      },
+      {
+        "fold": 4,
+        "score": 0.6300223964458913
+      },
+      {
+        "fold": 5,
+        "score": 0.6214768045188866
+      }
+    ],
+    "nested_config_fold_scores": [
+      {
+        "fold": 1,
+        "feature": "input_char_len",
+        "bins": 4,
+        "min_n": 40,
+        "train_score": 0.6289503602765778,
+        "valid_score": 0.6318698171014703
+      },
+      {
+        "fold": 2,
+        "feature": "input_char_len",
+        "bins": 5,
+        "min_n": 40,
+        "train_score": 0.6299678427377448,
+        "valid_score": 0.6280349478810925
+      },
+      {
+        "fold": 3,
+        "feature": "input_char_len",
+        "bins": 5,
+        "min_n": 60,
+        "train_score": 0.6316344913888032,
+        "valid_score": 0.6239911812759366
+      },
+      {
+        "fold": 4,
+        "feature": "input_char_len",
+        "bins": 5,
+        "min_n": 40,
+        "train_score": 0.6303319194949034,
+        "valid_score": 0.6297446318736069
+      },
+      {
+        "fold": 5,
+        "feature": "input_char_len",
+        "bins": 5,
+        "min_n": 40,
+        "train_score": 0.6324770146706458,
+        "valid_score": 0.6203743788230215
+      }
+    ]
+  },
+  "baseline_exp2": 0.5892166283468145,
+  "fixed_config_gain_vs_exp2": 0.03856144906706416,
+  "nested_config_gain_vs_exp2": 0.03758712087037175,
+  "verdict": "No direct feature leakage in the winning feature set, but the reported 0.6303205 is validation-tuned because target_r1 from the full validation set chooses selectors inside each subset/length bin. OOF group-pick scores are the safer estimates."
+}

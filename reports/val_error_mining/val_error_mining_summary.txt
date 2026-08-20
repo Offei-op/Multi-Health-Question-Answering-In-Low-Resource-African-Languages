@@ -1,0 +1,119 @@
+VAL ERROR MINING SUMMARY - EXP2 CURRENT PRACTICAL BEST
+======================================================================
+Overall
+  n: 6686
+  top1_r1: 0.539546
+  rerank_r1: 0.589217
+  oracle_r1: 0.683696
+  delta_r1: 0.049671
+  top1_rL: 0.492284
+  rerank_rL: 0.539797
+  oracle_rL: 0.625609
+  changed_rows: 3306
+  changed_pct: 0.494466
+  rerank_wins: 2158
+  rerank_ties: 3417
+  rerank_hurts: 1111
+  oracle_remaining_gap: 0.094479
+
+Per subset summary
+ subset    n  top1_r1  rerank_r1  oracle_r1  delta_r1  remaining_gap  changed_pct  hurt_pct  win_pct  mean_ref_len  mean_rerank_len
+Aka_Gha 1114   0.2903     0.3216     0.3950    0.0312         0.0734       0.8510    0.2828   0.5646      102.9417         121.1140
+Amh_Eth  462   0.1711     0.1907     0.3079    0.0196         0.1172       0.6732    0.2511   0.3723       20.8983          22.8745
+Eng_Eth  564   0.5629     0.6646     0.7506    0.1017         0.0859       0.5248    0.1330   0.3848       24.5106          25.1046
+Eng_Gha 1104   0.2831     0.3026     0.3844    0.0195         0.0818       0.7192    0.2672   0.4511       76.5317          83.3107
+Eng_Ken  390   0.7992     0.8199     0.9202    0.0207         0.1003       0.1923    0.0718   0.1205       76.3103          80.1513
+Eng_Uga 1688   0.8171     0.8650     0.9380    0.0479         0.0730       0.2162    0.0675   0.1463       99.0207         102.9941
+Lug_Uga  846   0.5587     0.6784     0.8533    0.1197         0.1749       0.4740    0.1525   0.3203       78.8924          84.4728
+Swa_Ken  518   0.7941     0.8311     0.9210    0.0370         0.0899       0.2239    0.0753   0.1486       84.1911          89.8069
+
+Changed vs unchanged summary
+ subset  rerank_changed    n  top1_r1  rerank_r1  delta_r1  oracle_r1  remaining_gap
+Aka_Gha           False  166   0.3710     0.3710    0.0000     0.4267         0.0557
+Aka_Gha            True  948   0.2762     0.3129    0.0367     0.3894         0.0766
+Amh_Eth           False  151   0.2821     0.2821    0.0000     0.3932         0.1111
+Amh_Eth            True  311   0.1172     0.1463    0.0291     0.2665         0.1202
+Eng_Eth           False  268   0.7518     0.7518    0.0000     0.8049         0.0531
+Eng_Eth            True  296   0.3919     0.5858    0.1939     0.7014         0.1157
+Eng_Gha           False  310   0.3395     0.3395    0.0000     0.4010         0.0615
+Eng_Gha            True  794   0.2610     0.2882    0.0272     0.3780         0.0898
+Eng_Ken           False  315   0.9088     0.9088    0.0000     0.9677         0.0589
+Eng_Ken            True   75   0.3388     0.4464    0.1076     0.7209         0.2745
+Eng_Uga           False 1323   0.9337     0.9337    0.0000     0.9706         0.0369
+Eng_Uga            True  365   0.3946     0.6160    0.2213     0.8198         0.2038
+Lug_Uga           False  445   0.8403     0.8403    0.0000     0.9199         0.0796
+Lug_Uga            True  401   0.2461     0.4987    0.2526     0.7794         0.2806
+Swa_Ken           False  402   0.9290     0.9290    0.0000     0.9637         0.0347
+Swa_Ken            True  116   0.3264     0.4917    0.1653     0.7729         0.2812
+
+Top 15 simple fallback rules by validation gain (use top1 instead of rerank based on length ratio)
+  scope   lo   hi  triggered    score  gain_vs_rerank  trigger_mean_delta_r1
+Eng_Gha 0.35 3.00         45 0.589517        0.000301              -0.044684
+Eng_Gha 0.35 2.50         76 0.589468        0.000252              -0.022133
+Amh_Eth 0.25 1.75         69 0.589411        0.000194              -0.018821
+Eng_Gha 0.25 3.00         33 0.589406        0.000190              -0.038429
+Eng_Gha 0.25 2.50         64 0.589357        0.000141              -0.014679
+Amh_Eth 0.25 2.00         50 0.589326        0.000110              -0.014688
+Amh_Eth 0.35 1.75         72 0.589322        0.000105              -0.009764
+Amh_Eth 0.25 1.50         95 0.589297        0.000080              -0.005652
+Eng_Gha 0.50 3.00         88 0.589286        0.000070              -0.005293
+Amh_Eth 0.25 1.25        136 0.589281        0.000064              -0.003171
+Amh_Eth 0.25 3.00         18 0.589253        0.000037              -0.013633
+Amh_Eth 0.50 1.75         79 0.589240        0.000023              -0.001940
+Amh_Eth 0.35 2.00         53 0.589237        0.000021              -0.002619
+Eng_Gha 0.50 2.50        119 0.589237        0.000021              -0.001152
+Amh_Eth 0.35 1.50         98 0.589208       -0.000009               0.000599
+
+Oracle gap bucket summary
+ subset    miss_bucket    n  mean_gap  mean_rerank  mean_oracle
+Aka_Gha         no_gap  181   -0.0001       0.4569       0.4568
+Aka_Gha    small <=.05  264    0.0284       0.3552       0.3837
+Aka_Gha medium .05-.15  557    0.0918       0.2788       0.3706
+Aka_Gha  large .15-.30  104    0.1956       0.2448       0.4404
+Aka_Gha      huge >.30    8    0.3590       0.1205       0.4796
+Amh_Eth         no_gap   91   -0.0002       0.4391       0.4390
+Amh_Eth    small <=.05   44    0.0302       0.1543       0.1845
+Amh_Eth medium .05-.15  189    0.0979       0.1091       0.2071
+Amh_Eth  large .15-.30  102    0.2002       0.1370       0.3371
+Amh_Eth      huge >.30   36    0.3868       0.1873       0.5741
+Eng_Eth         no_gap  313   -0.0001       0.8769       0.8769
+Eng_Eth    small <=.05   37    0.0257       0.3844       0.4100
+Eng_Eth medium .05-.15   99    0.1025       0.3875       0.4899
+Eng_Eth  large .15-.30   71    0.1976       0.5127       0.7103
+Eng_Eth      huge >.30   44    0.5311       0.2589       0.7900
+Eng_Gha         no_gap  276   -0.0006       0.4199       0.4193
+Eng_Gha    small <=.05  220    0.0296       0.3132       0.3428
+Eng_Gha medium .05-.15  429    0.0931       0.2616       0.3547
+Eng_Gha  large .15-.30  154    0.1965       0.2152       0.4118
+Eng_Gha      huge >.30   25    0.5524       0.1556       0.7080
+Eng_Ken         no_gap  303   -0.0001       0.9850       0.9849
+Eng_Ken    small <=.05    9    0.0144       0.3110       0.3254
+Eng_Ken medium .05-.15   17    0.0879       0.2344       0.3223
+Eng_Ken  large .15-.30   15    0.2244       0.2022       0.4266
+Eng_Ken      huge >.30   46    0.7425       0.2499       0.9924
+Eng_Uga         no_gap 1382    0.0000       0.9879       0.9879
+Eng_Uga    small <=.05   44    0.0250       0.4989       0.5239
+Eng_Uga medium .05-.15   70    0.0918       0.4212       0.5129
+Eng_Uga  large .15-.30   39    0.2031       0.2291       0.4322
+Eng_Uga      huge >.30  153    0.7047       0.2251       0.9298
+Lug_Uga         no_gap  540   -0.0001       0.9710       0.9709
+Lug_Uga    small <=.05   30    0.0246       0.1848       0.2093
+Lug_Uga medium .05-.15   81    0.0943       0.1441       0.2384
+Lug_Uga  large .15-.30   28    0.2048       0.1040       0.3088
+Lug_Uga      huge >.30  167    0.8016       0.1764       0.9780
+Swa_Ken         no_gap  411   -0.0000       0.9808       0.9808
+Swa_Ken    small <=.05    9    0.0267       0.4579       0.4846
+Swa_Ken medium .05-.15   24    0.0924       0.2621       0.3545
+Swa_Ken  large .15-.30   19    0.2033       0.1545       0.3577
+Swa_Ken      huge >.30   55    0.7319       0.2555       0.9873
+
+Files written:
+  C:\Users\Papa Offei\Documents\lalang\reports\val_error_mining\biggest_rerank_wins.csv
+  C:\Users\Papa Offei\Documents\lalang\reports\val_error_mining\candidate_fallback_rules_length_ratio.csv
+  C:\Users\Papa Offei\Documents\lalang\reports\val_error_mining\changed_vs_unchanged_summary.csv
+  C:\Users\Papa Offei\Documents\lalang\reports\val_error_mining\largest_remaining_oracle_gaps.csv
+  C:\Users\Papa Offei\Documents\lalang\reports\val_error_mining\length_bin_summary.csv
+  C:\Users\Papa Offei\Documents\lalang\reports\val_error_mining\oracle_gap_bucket_summary.csv
+  C:\Users\Papa Offei\Documents\lalang\reports\val_error_mining\subset_summary.csv
+  C:\Users\Papa Offei\Documents\lalang\reports\val_error_mining\val_error_mining_rows.csv
+  C:\Users\Papa Offei\Documents\lalang\reports\val_error_mining\worst_rerank_hurts.csv

@@ -1,0 +1,11 @@
+{
+  "experiment": "test_predictions_best_bgem3_top50_crossencoder_rerank",
+  "k": 50,
+  "bank": "Train.csv + Val.csv",
+  "test_rows": 2618,
+  "submission": "/data/test_predictions_best_setup/submission_best_bgem3_rerank_train_val.csv",
+  "encoder_top1_submission": "/data/test_predictions_best_setup/submission_encoder_top1_train_val.csv",
+  "debug_candidates": "/data/test_predictions_best_setup/test_candidate_scores.csv",
+  "blank_predictions": 0,
+  "changed_by_reranker_vs_encoder_top1": 1250
+}

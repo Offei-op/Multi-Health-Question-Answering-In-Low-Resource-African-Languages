@@ -1,0 +1,51 @@
+{
+  "loaded_sources": [
+    "exp1_baseline_qa_doc",
+    "exp1_finetuned_qa_doc",
+    "exp2_top1",
+    "exp2_rerank",
+    "exp3_top100_rerank",
+    "exp4_pairwise",
+    "exp5_encoder_exp2_rerank",
+    "exp8_ghana_grouped",
+    "exp9_jina",
+    "exp10_lug_global",
+    "exp10_lug_specialized",
+    "exp12_lug_merged",
+    "exp14_qonly"
+  ],
+  "missing_sources": [
+    {
+      "name": "exp13_lug_selector",
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\reports\\exp13_lug_merged_selector\\oof_best_selector_choices.csv"
+    },
+    {
+      "name": "local_regressor_oof",
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\reports\\local_candidate_regressor_submission\\val_oof_choices.csv"
+    },
+    {
+      "name": "local_regressor_margin_gate",
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\reports\\local_candidate_regressor_submission\\val_margin_gate_rows.csv"
+    },
+    {
+      "name": "cluster_selector_fast",
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\reports\\cluster_aware_selector_experiment\\cluster_selector_fast_oof_choices.csv"
+    },
+    {
+      "name": "cluster_selector_fullcap",
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\reports\\cluster_aware_selector_experiment\\cluster_selector_fullcap_oof_choices.csv"
+    },
+    {
+      "name": "cluster_selector_noleak",
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\reports\\cluster_aware_selector_experiment\\cluster_selector_noleak_oof_choices.csv"
+    }
+  ],
+  "best_single_source": {
+    "source": "exp3_top100_rerank",
+    "coverage": 1.0,
+    "rouge1": 0.5904174317680138
+  },
+  "oracle_existing_sources_r1": 0.6569692116972645,
+  "oracle_gain_vs_best_single": 0.06655177992925077,
+  "oracle_gain_vs_exp2_rerank": 0.06775258335044998
+}

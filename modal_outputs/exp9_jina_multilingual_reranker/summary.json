@@ -1,0 +1,171 @@
+{
+  "experiment": "exp9_jina_multilingual_reranker",
+  "base_model": "jinaai/jina-reranker-v2-base-multilingual",
+  "gpu": "L40S",
+  "k": 50,
+  "train_pairs_per_query": 12,
+  "epochs": 1,
+  "batch_size": 16,
+  "gradient_accumulation": 1,
+  "effective_batch": 16,
+  "learning_rate": 1e-05,
+  "train_seconds": 5082.837837934494,
+  "candidate_baseline": {
+    "label": "ft_bgem3_per_subset_top50",
+    "top1_r1": 0.5395458277838778,
+    "oracle_r1": 0.6836959744084082,
+    "per_subset": {
+      "Aka_Gha": {
+        "top1_r1": 0.2903,
+        "oracle_r1": 0.395
+      },
+      "Amh_Eth": {
+        "top1_r1": 0.1711,
+        "oracle_r1": 0.3079
+      },
+      "Eng_Eth": {
+        "top1_r1": 0.5629,
+        "oracle_r1": 0.7506
+      },
+      "Eng_Gha": {
+        "top1_r1": 0.2831,
+        "oracle_r1": 0.3844
+      },
+      "Eng_Ken": {
+        "top1_r1": 0.7992,
+        "oracle_r1": 0.9202
+      },
+      "Eng_Uga": {
+        "top1_r1": 0.8171,
+        "oracle_r1": 0.938
+      },
+      "Lug_Uga": {
+        "top1_r1": 0.5587,
+        "oracle_r1": 0.8533
+      },
+      "Swa_Ken": {
+        "top1_r1": 0.7941,
+        "oracle_r1": 0.921
+      }
+    }
+  },
+  "top1": {
+    "label": "ft_bgem3_top1",
+    "rouge1": 0.5395458277838778,
+    "rougeL": 0.4922840777969995,
+    "per_subset": {
+      "Aka_Gha": {
+        "rouge1": 0.2903,
+        "rougeL": 0.173
+      },
+      "Amh_Eth": {
+        "rouge1": 0.1711,
+        "rougeL": 0.16
+      },
+      "Eng_Eth": {
+        "rouge1": 0.5629,
+        "rougeL": 0.5438
+      },
+      "Eng_Gha": {
+        "rouge1": 0.2831,
+        "rougeL": 0.1869
+      },
+      "Eng_Ken": {
+        "rouge1": 0.7992,
+        "rougeL": 0.7816
+      },
+      "Eng_Uga": {
+        "rouge1": 0.8171,
+        "rougeL": 0.8008
+      },
+      "Lug_Uga": {
+        "rouge1": 0.5587,
+        "rougeL": 0.5357
+      },
+      "Swa_Ken": {
+        "rouge1": 0.7941,
+        "rougeL": 0.7759
+      }
+    }
+  },
+  "rerank": {
+    "label": "jina_reranker",
+    "rouge1": 0.5770043163797073,
+    "rougeL": 0.5275465017883888,
+    "per_subset": {
+      "Aka_Gha": {
+        "rouge1": 0.3185,
+        "rougeL": 0.1888
+      },
+      "Amh_Eth": {
+        "rouge1": 0.182,
+        "rougeL": 0.169
+      },
+      "Eng_Eth": {
+        "rouge1": 0.6543,
+        "rougeL": 0.6387
+      },
+      "Eng_Gha": {
+        "rouge1": 0.299,
+        "rougeL": 0.1955
+      },
+      "Eng_Ken": {
+        "rouge1": 0.7956,
+        "rougeL": 0.7731
+      },
+      "Eng_Uga": {
+        "rouge1": 0.8545,
+        "rougeL": 0.8412
+      },
+      "Lug_Uga": {
+        "rouge1": 0.6587,
+        "rougeL": 0.6413
+      },
+      "Swa_Ken": {
+        "rouge1": 0.7914,
+        "rougeL": 0.7695
+      }
+    }
+  },
+  "oracle": {
+    "label": "oracle_topk",
+    "rouge1": 0.6836959744084082,
+    "rougeL": 0.6256092887229702,
+    "per_subset": {
+      "Aka_Gha": {
+        "rouge1": 0.395,
+        "rougeL": 0.2291
+      },
+      "Amh_Eth": {
+        "rouge1": 0.3079,
+        "rougeL": 0.2791
+      },
+      "Eng_Eth": {
+        "rouge1": 0.7506,
+        "rougeL": 0.7314
+      },
+      "Eng_Gha": {
+        "rouge1": 0.3844,
+        "rougeL": 0.255
+      },
+      "Eng_Ken": {
+        "rouge1": 0.9202,
+        "rougeL": 0.9069
+      },
+      "Eng_Uga": {
+        "rouge1": 0.938,
+        "rougeL": 0.9301
+      },
+      "Lug_Uga": {
+        "rouge1": 0.8533,
+        "rougeL": 0.8405
+      },
+      "Swa_Ken": {
+        "rouge1": 0.921,
+        "rougeL": 0.9075
+      }
+    }
+  },
+  "delta_vs_exp2_rerank_r1": -0.012212311967107259,
+  "delta_vs_top1": 0.03745848859582945
+}

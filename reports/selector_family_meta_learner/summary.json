@@ -1,0 +1,154 @@
+{
+  "best_family_hybrid": 0.6238405650326898,
+  "family_oracle": 0.6338465263448811,
+  "best": {
+    "model": "ensemble",
+    "score": 0.6258109015467073,
+    "gain_vs_exp2": 0.036594273199892724,
+    "gain_vs_best_family_hybrid": 0.0019703365140174567,
+    "choice_counts": {
+      "rich_meta": 1366,
+      "meta_gate": 1286,
+      "residual": 1216,
+      "fast_gate": 1158,
+      "subset_clean": 847,
+      "global_clean": 813
+    },
+    "per_subset": {
+      "Aka_Gha": 0.328896,
+      "Amh_Eth": 0.196405,
+      "Eng_Eth": 0.687572,
+      "Eng_Gha": 0.310244,
+      "Eng_Ken": 0.86667,
+      "Eng_Uga": 0.904418,
+      "Lug_Uga": 0.809948,
+      "Swa_Ken": 0.862681
+    }
+  },
+  "results": [
+    {
+      "model": "hgb",
+      "score": 0.6251550358998074,
+      "gain_vs_exp2": 0.035938407552992824,
+      "gain_vs_best_family_hybrid": 0.0013144708671175565,
+      "choice_counts": {
+        "meta_gate": 6330,
+        "fast_gate": 189,
+        "rich_meta": 144,
+        "global_clean": 16,
+        "residual": 4,
+        "subset_clean": 3
+      },
+      "per_subset": {
+        "Aka_Gha": 0.328327,
+        "Amh_Eth": 0.196713,
+        "Eng_Eth": 0.686582,
+        "Eng_Gha": 0.309615,
+        "Eng_Ken": 0.864379,
+        "Eng_Uga": 0.903975,
+        "Lug_Uga": 0.810072,
+        "Swa_Ken": 0.860546
+      }
+    },
+    {
+      "model": "extra_trees",
+      "score": 0.6247105984503492,
+      "gain_vs_exp2": 0.03549397010353461,
+      "gain_vs_best_family_hybrid": 0.0008700334176593438,
+      "choice_counts": {
+        "rich_meta": 1404,
+        "meta_gate": 1262,
+        "residual": 1190,
+        "fast_gate": 1133,
+        "global_clean": 859,
+        "subset_clean": 838
+      },
+      "per_subset": {
+        "Aka_Gha": 0.327179,
+        "Amh_Eth": 0.196449,
+        "Eng_Eth": 0.686765,
+        "Eng_Gha": 0.310166,
+        "Eng_Ken": 0.861601,
+        "Eng_Uga": 0.902792,
+        "Lug_Uga": 0.810103,
+        "Swa_Ken": 0.862038
+      }
+    },
+    {
+      "model": "random_forest",
+      "score": 0.6249738706870498,
+      "gain_vs_exp2": 0.03575724234023525,
+      "gain_vs_best_family_hybrid": 0.001133305654359984,
+      "choice_counts": {
+        "meta_gate": 3227,
+        "rich_meta": 1041,
+        "fast_gate": 760,
+        "residual": 630,
+        "subset_clean": 548,
+        "global_clean": 480
+      },
+      "per_subset": {
+        "Aka_Gha": 0.32828,
+        "Amh_Eth": 0.196099,
+        "Eng_Eth": 0.686618,
+        "Eng_Gha": 0.310405,
+        "Eng_Ken": 0.863961,
+        "Eng_Uga": 0.902887,
+        "Lug_Uga": 0.809433,
+        "Swa_Ken": 0.862038
+      }
+    },
+    {
+      "model": "ensemble",
+      "score": 0.6258109015467073,
+      "gain_vs_exp2": 0.036594273199892724,
+      "gain_vs_best_family_hybrid": 0.0019703365140174567,
+      "choice_counts": {
+        "rich_meta": 1366,
+        "meta_gate": 1286,
+        "residual": 1216,
+        "fast_gate": 1158,
+        "subset_clean": 847,
+        "global_clean": 813
+      },
+      "per_subset": {
+        "Aka_Gha": 0.328896,
+        "Amh_Eth": 0.196405,
+        "Eng_Eth": 0.687572,
+        "Eng_Gha": 0.310244,
+        "Eng_Ken": 0.86667,
+        "Eng_Uga": 0.904418,
+        "Lug_Uga": 0.809948,
+        "Swa_Ken": 0.862681
+      }
+    },
+    {
+      "model": "weighted_ensemble",
+      "score": 0.6256653228585802,
+      "gain_vs_exp2": 0.03644869451176569,
+      "gain_vs_best_family_hybrid": 0.0018247578258904218,
+      "choice_counts": {
+        "rich_meta": 1374,
+        "meta_gate": 1286,
+        "residual": 1203,
+        "fast_gate": 1167,
+        "global_clean": 832,
+        "subset_clean": 824
+      },
+      "per_subset": {
+        "Aka_Gha": 0.328303,
+        "Amh_Eth": 0.197358,
+        "Eng_Eth": 0.6878,
+        "Eng_Gha": 0.309972,
+        "Eng_Ken": 0.866359,
+        "Eng_Uga": 0.904584,
+        "Lug_Uga": 0.810049,
+        "Swa_Ken": 0.861084
+      }
+    }
+  ],
+  "notes": [
+    "This learns to choose among clean selector-family outputs.",
+    "Family target scores come from OOF validation choices; no references are used as prediction features."
+  ]
+}

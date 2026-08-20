@@ -1,0 +1,75 @@
+{
+  "baseline_fast_rouge1": {
+    "encoder_top1": 0.5394795443970752,
+    "exp2_rerank": 0.5889304525640328,
+    "oracle_top50": 0.6840949279607131,
+    "best_possible_top1_or_rerank": 0.6143196043561107
+  },
+  "binary_selector": [
+    {
+      "model": "lightgbm",
+      "auc_top1_better": 0.8612917456375401,
+      "best_scope": "__ALL__",
+      "best_threshold": 0.8799999999999999,
+      "best_score": 0.5909696394668903,
+      "best_gain": 0.002039186902857537,
+      "best_fallback_n": 156,
+      "global_0_5_score": 0.5873258410858228,
+      "global_0_5_gain": -0.0016046114782100052,
+      "global_0_5_fallback_n": 1534
+    },
+    {
+      "model": "hist_gb",
+      "auc_top1_better": 0.8621975079163093,
+      "best_scope": "__ALL__",
+      "best_threshold": 0.6599999999999999,
+      "best_score": 0.590710829477511,
+      "best_gain": 0.00178037691347821,
+      "best_fallback_n": 263,
+      "global_0_5_score": 0.5901998794303767,
+      "global_0_5_gain": 0.0012694268663439034,
+      "global_0_5_fallback_n": 693
+    },
+    {
+      "model": "logreg",
+      "auc_top1_better": 0.7804784321414339,
+      "best_scope": "Eng_Gha",
+      "best_threshold": 0.7999999999999999,
+      "best_score": 0.5897148845423646,
+      "best_gain": 0.0007844319783318898,
+      "best_fallback_n": 91,
+      "global_0_5_score": 0.5640242731120247,
+      "global_0_5_gain": -0.024906179452008015,
+      "global_0_5_fallback_n": 3003
+    },
+    {
+      "model": "extra_trees",
+      "auc_top1_better": 0.8339897687066461,
+      "best_scope": "Eng_Uga",
+      "best_threshold": 0.6599999999999999,
+      "best_score": 0.5896826532676208,
+      "best_gain": 0.0007522007035880574,
+      "best_fallback_n": 60,
+      "global_0_5_score": 0.5724218556892128,
+      "global_0_5_gain": -0.01650859687481998,
+      "global_0_5_fallback_n": 2723
+    }
+  ],
+  "candidate_level": [
+    {
+      "model": "lightgbm_reg",
+      "score": 0.5912558538836795,
+      "gain_vs_rerank": 0.0023254013196467582,
+      "chosen_is_encoder_top1_pct": 0.38498354771163623,
+      "chosen_is_exp2_rerank_pct": 0.5773257553096022
+    },
+    {
+      "model": "extra_trees_reg",
+      "score": 0.5894979380435197,
+      "gain_vs_rerank": 0.0005674854794869288,
+      "chosen_is_encoder_top1_pct": 0.3408615016452288,
+      "chosen_is_exp2_rerank_pct": 0.5877953933592581
+    }
+  ],
+  "runtime_seconds": 560.4534139633179
+}

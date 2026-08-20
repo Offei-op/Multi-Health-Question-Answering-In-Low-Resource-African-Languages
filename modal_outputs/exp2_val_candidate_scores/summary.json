@@ -1,0 +1,8 @@
+{
+  "experiment": "exp2_val_candidate_scores",
+  "k": 50,
+  "val_rows": 6686,
+  "candidate_rows": 334300,
+  "candidate_scores": "/data/exp2_val_candidate_scores/val_candidate_scores.csv",
+  "chosen_scores": "/data/exp2_val_candidate_scores/val_chosen_scores.csv"
+}

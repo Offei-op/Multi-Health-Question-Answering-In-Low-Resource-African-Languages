@@ -1,0 +1,77 @@
+{
+  "fullcap": 0.6353457041144692,
+  "noleak": 0.5646714819082213,
+  "gain": 0.070674222206248,
+  "same_answer_rate": 0.6114268620999103,
+  "changed_answer_rate": 0.38857313790008974,
+  "largest_subset_gains": [
+    {
+      "subset": "Lug_Uga",
+      "rows": 846,
+      "fullcap": 0.8388260822890731,
+      "noleak": 0.6164620386247086,
+      "gain": 0.2223640436643643,
+      "changed": 0.5047281323877069
+    },
+    {
+      "subset": "Eng_Ken",
+      "rows": 390,
+      "fullcap": 0.8893843099255634,
+      "noleak": 0.7985629536439506,
+      "gain": 0.09082135628161284,
+      "changed": 0.2205128205128205
+    },
+    {
+      "subset": "Eng_Uga",
+      "rows": 1688,
+      "fullcap": 0.9166767035428719,
+      "noleak": 0.8320124718808536,
+      "gain": 0.08466423166201834,
+      "changed": 0.22867298578199047
+    },
+    {
+      "subset": "Swa_Ken",
+      "rows": 518,
+      "fullcap": 0.8773453144508172,
+      "noleak": 0.8006533589071095,
+      "gain": 0.07669195554370768,
+      "changed": 0.20463320463320467
+    },
+    {
+      "subset": "Eng_Eth",
+      "rows": 564,
+      "fullcap": 0.6734334319242876,
+      "noleak": 0.6402864287584216,
+      "gain": 0.033147003165866,
+      "changed": 0.34397163120567376
+    },
+    {
+      "subset": "Aka_Gha",
+      "rows": 1114,
+      "fullcap": 0.3357867952203368,
+      "noleak": 0.31645299033045443,
+      "gain": 0.019333804889882292,
+      "changed": 0.63016157989228
+    },
+    {
+      "subset": "Eng_Gha",
+      "rows": 1104,
+      "fullcap": 0.3148184095729589,
+      "noleak": 0.29720962329437267,
+      "gain": 0.017608786278586242,
+      "changed": 0.447463768115942
+    },
+    {
+      "subset": "Amh_Eth",
+      "rows": 462,
+      "fullcap": 0.19081604568533517,
+      "noleak": 0.17636796066470992,
+      "gain": 0.014448085020625263,
+      "changed": 0.43939393939393945
+    }
+  ],
+  "notes": [
+    "Fullcap uses validation reference length, so this is a diagnostic report only.",
+    "Rows with large fullcap_gain_vs_noleak show where legal proxy features should be targeted."
+  ]
+}

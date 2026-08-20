@@ -1,0 +1,150 @@
+{
+  "baseline_exp2": 0.5892166283468145,
+  "plain_rich_best": 0.6227089712249555,
+  "oracle_with_regressor": 0.6502489146304556,
+  "regressor_source_score": 0.592474046904811,
+  "best": {
+    "model": "hgb",
+    "score": 0.613606420275577,
+    "gain_vs_exp2": 0.02438979192876245,
+    "gain_vs_plain_rich": -0.009102550949378507,
+    "choice_counts": {
+      "local_candidate_regressor": 2245,
+      "exp2_rerank": 1846,
+      "cluster_fast": 1230,
+      "exp2_top1": 765,
+      "cluster_noleak": 600
+    },
+    "per_subset": {
+      "Aka_Gha": 0.323931,
+      "Amh_Eth": 0.191402,
+      "Eng_Eth": 0.682935,
+      "Eng_Gha": 0.307697,
+      "Eng_Ken": 0.852958,
+      "Eng_Uga": 0.888439,
+      "Lug_Uga": 0.779547,
+      "Swa_Ken": 0.842812
+    }
+  },
+  "results": [
+    {
+      "model": "hgb",
+      "score": 0.613606420275577,
+      "gain_vs_exp2": 0.02438979192876245,
+      "gain_vs_plain_rich": -0.009102550949378507,
+      "choice_counts": {
+        "local_candidate_regressor": 2245,
+        "exp2_rerank": 1846,
+        "cluster_fast": 1230,
+        "exp2_top1": 765,
+        "cluster_noleak": 600
+      },
+      "per_subset": {
+        "Aka_Gha": 0.323931,
+        "Amh_Eth": 0.191402,
+        "Eng_Eth": 0.682935,
+        "Eng_Gha": 0.307697,
+        "Eng_Ken": 0.852958,
+        "Eng_Uga": 0.888439,
+        "Lug_Uga": 0.779547,
+        "Swa_Ken": 0.842812
+      }
+    },
+    {
+      "model": "extra_trees",
+      "score": 0.6028440053895535,
+      "gain_vs_exp2": 0.013627377042738975,
+      "gain_vs_plain_rich": -0.019864965835401982,
+      "choice_counts": {
+        "local_candidate_regressor": 2853,
+        "exp2_rerank": 1439,
+        "cluster_noleak": 1010,
+        "exp2_top1": 756,
+        "cluster_fast": 628
+      },
+      "per_subset": {
+        "Aka_Gha": 0.324413,
+        "Amh_Eth": 0.194604,
+        "Eng_Eth": 0.674666,
+        "Eng_Gha": 0.309455,
+        "Eng_Ken": 0.832688,
+        "Eng_Uga": 0.872573,
+        "Lug_Uga": 0.742054,
+        "Swa_Ken": 0.833463
+      }
+    },
+    {
+      "model": "random_forest",
+      "score": 0.6058487498293046,
+      "gain_vs_exp2": 0.016632121482490048,
+      "gain_vs_plain_rich": -0.01686022139565091,
+      "choice_counts": {
+        "local_candidate_regressor": 2695,
+        "exp2_rerank": 1405,
+        "cluster_noleak": 969,
+        "cluster_fast": 851,
+        "exp2_top1": 766
+      },
+      "per_subset": {
+        "Aka_Gha": 0.32592,
+        "Amh_Eth": 0.192804,
+        "Eng_Eth": 0.67564,
+        "Eng_Gha": 0.309842,
+        "Eng_Ken": 0.840845,
+        "Eng_Uga": 0.875065,
+        "Lug_Uga": 0.749879,
+        "Swa_Ken": 0.841682
+      }
+    },
+    {
+      "model": "ensemble",
+      "score": 0.6082279636855679,
+      "gain_vs_exp2": 0.01901133533875332,
+      "gain_vs_plain_rich": -0.014481007539387636,
+      "choice_counts": {
+        "local_candidate_regressor": 2628,
+        "exp2_rerank": 1696,
+        "cluster_noleak": 919,
+        "cluster_fast": 854,
+        "exp2_top1": 589
+      },
+      "per_subset": {
+        "Aka_Gha": 0.324815,
+        "Amh_Eth": 0.194408,
+        "Eng_Eth": 0.67926,
+        "Eng_Gha": 0.30865,
+        "Eng_Ken": 0.841122,
+        "Eng_Uga": 0.879708,
+        "Lug_Uga": 0.759066,
+        "Swa_Ken": 0.841591
+      }
+    },
+    {
+      "model": "weighted_ensemble",
+      "score": 0.6092445904374335,
+      "gain_vs_exp2": 0.020027962090618967,
+      "gain_vs_plain_rich": -0.01346438078752199,
+      "choice_counts": {
+        "local_candidate_regressor": 2537,
+        "exp2_rerank": 1819,
+        "cluster_fast": 937,
+        "cluster_noleak": 859,
+        "exp2_top1": 534
+      },
+      "per_subset": {
+        "Aka_Gha": 0.32437,
+        "Amh_Eth": 0.193577,
+        "Eng_Eth": 0.681325,
+        "Eng_Gha": 0.308262,
+        "Eng_Ken": 0.842554,
+        "Eng_Uga": 0.881949,
+        "Lug_Uga": 0.762663,
+        "Swa_Ken": 0.840737
+      }
+    }
+  ],
+  "notes": [
+    "The local candidate regressor validation source has target scores and ranks but no answer text in its val choice file.",
+    "It is deployable on test because test_candidate_regressor_choices.csv contains candidate_answer."
+  ]
+}

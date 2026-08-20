@@ -1,0 +1,63 @@
+{
+  "experiment": "exp5_bgem3_encoder_mining_v2",
+  "gpu": "L40S",
+  "dense_k": 200,
+  "lexical_k": 50,
+  "eval_k": 50,
+  "pairs_per_anchor": 4,
+  "epochs": 2,
+  "batch_size": 32,
+  "grad_accum": 1,
+  "effective_batch": 32,
+  "learning_rate": 1.5e-05,
+  "max_seq_length": 256,
+  "lora_r": 32,
+  "lora_alpha": 64,
+  "lora_dropout": 0.05,
+  "train_seconds": 3723.5051488876343,
+  "train_examples": 141395,
+  "anchor_stats": {
+    "ok": 28768,
+    "dropped": 1046
+  },
+  "eval": {
+    "top1_r1": 0.5465267817657121,
+    "oracle_r1": 0.6888770220521963,
+    "per_subset": {
+      "Aka_Gha": {
+        "top1_r1": 0.295,
+        "oracle_r1": 0.4054
+      },
+      "Amh_Eth": {
+        "top1_r1": 0.1781,
+        "oracle_r1": 0.312
+      },
+      "Eng_Eth": {
+        "top1_r1": 0.5772,
+        "oracle_r1": 0.7539
+      },
+      "Eng_Gha": {
+        "top1_r1": 0.2936,
+        "oracle_r1": 0.3906
+      },
+      "Eng_Ken": {
+        "top1_r1": 0.8129,
+        "oracle_r1": 0.9221
+      },
+      "Eng_Uga": {
+        "top1_r1": 0.8216,
+        "oracle_r1": 0.9386
+      },
+      "Lug_Uga": {
+        "top1_r1": 0.5757,
+        "oracle_r1": 0.8668
+      },
+      "Swa_Ken": {
+        "top1_r1": 0.7774,
+        "oracle_r1": 0.9198
+      }
+    }
+  },
+  "delta_top1_vs_exp2_encoder": 0.0069809539818342925,
+  "delta_oracle50_vs_exp2_encoder": 0.005181047643788017
+}

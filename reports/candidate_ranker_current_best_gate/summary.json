@@ -1,0 +1,143 @@
+{
+  "feature_columns": [
+    "subset",
+    "candidate_rank",
+    "bi_rank",
+    "rerank_rank",
+    "bi_score",
+    "rerank_score",
+    "rerank_score_max",
+    "rerank_score_second",
+    "rerank_score_margin_to_best",
+    "rerank_score_gap_from_second",
+    "rerank_score_delta_to_group_best",
+    "bi_score_max",
+    "bi_score_delta_to_group_best",
+    "is_top1",
+    "is_rerank_choice",
+    "val_input_len",
+    "candidate_question_len",
+    "candidate_answer_len",
+    "candidate_len_ratio_to_query",
+    "query_candidate_question_jaccard",
+    "query_candidate_answer_jaccard",
+    "query_candidate_best_jaccard"
+  ],
+  "leakage_columns_excluded": [
+    "answer_ref_len_ratio",
+    "candidate_r1",
+    "is_oracle",
+    "output",
+    "reference",
+    "reference_len",
+    "target",
+    "target_r1"
+  ],
+  "current_best_oof_score": 0.6369591077160984,
+  "exp2_pool_rerank_score": 0.5889304525640328,
+  "exp2_pool_bi_top1_score": 0.5394795443970752,
+  "n_val_ids": 6686,
+  "n_val_candidate_rows": 334300,
+  "n_current_best_predictions_present_in_exp2_pool": 0,
+  "models": [
+    {
+      "model": "hgb",
+      "candidate_choice_score": 0.5903836635712,
+      "gain_vs_exp2_rerank": 0.001453211007167221,
+      "current_best_oof_score": 0.6369591077160984,
+      "gain_if_used_directly_vs_current": -0.04657544414489845,
+      "best_gate": {
+        "model": "hgb",
+        "threshold": -0.05,
+        "rank_cap": 1,
+        "require_current_in_pool": true,
+        "score": 0.6369591077160983,
+        "gain_vs_current": 0.0,
+        "switch_n": 0,
+        "mean_gain_switched": 0.0
+      }
+    },
+    {
+      "model": "lgbm_reg",
+      "candidate_choice_score": 0.590128490730057,
+      "gain_vs_exp2_rerank": 0.0011980381660242623,
+      "current_best_oof_score": 0.6369591077160984,
+      "gain_if_used_directly_vs_current": -0.04683061698604141,
+      "best_gate": {
+        "model": "lgbm_reg",
+        "threshold": 0.24,
+        "rank_cap": 1,
+        "require_current_in_pool": false,
+        "score": 0.6369593213821809,
+        "gain_vs_current": 2.136660826046466e-07,
+        "switch_n": 5,
+        "mean_gain_switched": 0.0002857142857143058
+      }
+    },
+    {
+      "model": "ensemble_mean",
+      "candidate_choice_score": 0.590425031573055,
+      "gain_vs_exp2_rerank": 0.0014945790090222788,
+      "current_best_oof_score": 0.6369591077160984,
+      "gain_if_used_directly_vs_current": -0.04653407614304339,
+      "best_gate": {
+        "model": "ensemble_mean",
+        "threshold": 0.23,
+        "rank_cap": 1,
+        "require_current_in_pool": false,
+        "score": 0.6369847476460159,
+        "gain_vs_current": 2.5639929917553594e-05,
+        "switch_n": 4,
+        "mean_gain_switched": 0.04285714285714288
+      }
+    },
+    {
+      "model": "ensemble_max",
+      "candidate_choice_score": 0.5899544458717647,
+      "gain_vs_exp2_rerank": 0.0010239933077319519,
+      "current_best_oof_score": 0.6369591077160984,
+      "gain_if_used_directly_vs_current": -0.04700466184433372,
+      "best_gate": {
+        "model": "ensemble_max",
+        "threshold": 0.25,
+        "rank_cap": 3,
+        "require_current_in_pool": false,
+        "score": 0.6370144066991146,
+        "gain_vs_current": 5.5298983016260905e-05,
+        "switch_n": 7,
+        "mean_gain_switched": 0.05281842863521275
+      }
+    }
+  ],
+  "test": {
+    "selected_model_for_test": "ensemble_max",
+    "selected_gate": {
+      "model": "ensemble_max",
+      "threshold": 0.25,
+      "rank_cap": 3,
+      "require_current_in_pool": false,
+      "score": 0.6370144066991146,
+      "gain_vs_current": 5.5298983016260905e-05,
+      "switch_n": 7,
+      "mean_gain_switched": 0.05281842863521275
+    },
+    "fitted_models": [
+      {
+        "model": "hgb",
+        "is_ranker": false
+      },
+      {
+        "model": "lgbm_reg",
+        "is_ranker": false
+      }
+    ],
+    "submission": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_submissions\\submission_exp7_exp5_candidate_ranker_gate.csv",
+    "test_override_count": 1,
+    "changed_vs_current_best_submission": 1
+  },
+  "notes": [
+    "This experiment ranks individual candidates, then gates against the current best exp7+exp5 submission.",
+    "Features intentionally exclude target/reference/oracle columns; target ROUGE is used only as the training label.",
+    "A high validation score from direct candidate selection is not enough here; only the gate-vs-current metric matters."
+  ]
+}

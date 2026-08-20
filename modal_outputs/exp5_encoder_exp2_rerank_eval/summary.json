@@ -1,0 +1,133 @@
+{
+  "experiment": "exp5_encoder_candidates_scored_by_exp2_reranker",
+  "gpu": "L40S",
+  "k": 50,
+  "encoder": "exp5_bgem3_encoder_mining_v2/final",
+  "reranker": "exp2_crossencoder_rerank/final",
+  "top1": {
+    "label": "exp5_encoder_top1",
+    "rouge1": 0.5463792018516199,
+    "rougeL": 0.49860449347328434,
+    "per_subset": {
+      "Aka_Gha": {
+        "rouge1": 0.2949,
+        "rougeL": 0.1769
+      },
+      "Amh_Eth": {
+        "rouge1": 0.1791,
+        "rougeL": 0.1668
+      },
+      "Eng_Eth": {
+        "rouge1": 0.5779,
+        "rougeL": 0.5592
+      },
+      "Eng_Gha": {
+        "rouge1": 0.2936,
+        "rougeL": 0.1957
+      },
+      "Eng_Ken": {
+        "rouge1": 0.813,
+        "rougeL": 0.7958
+      },
+      "Eng_Uga": {
+        "rouge1": 0.8206,
+        "rougeL": 0.8049
+      },
+      "Lug_Uga": {
+        "rouge1": 0.5757,
+        "rougeL": 0.5536
+      },
+      "Swa_Ken": {
+        "rouge1": 0.7771,
+        "rougeL": 0.7543
+      }
+    }
+  },
+  "rerank": {
+    "label": "exp5_encoder_exp2_rerank",
+    "rouge1": 0.5902712632484098,
+    "rougeL": 0.5407295839099605,
+    "per_subset": {
+      "Aka_Gha": {
+        "rouge1": 0.3247,
+        "rougeL": 0.1909
+      },
+      "Amh_Eth": {
+        "rouge1": 0.1899,
+        "rougeL": 0.1763
+      },
+      "Eng_Eth": {
+        "rouge1": 0.6691,
+        "rougeL": 0.6513
+      },
+      "Eng_Gha": {
+        "rouge1": 0.3012,
+        "rougeL": 0.1986
+      },
+      "Eng_Ken": {
+        "rouge1": 0.8153,
+        "rougeL": 0.7959
+      },
+      "Eng_Uga": {
+        "rouge1": 0.8645,
+        "rougeL": 0.8529
+      },
+      "Lug_Uga": {
+        "rouge1": 0.6877,
+        "rougeL": 0.669
+      },
+      "Swa_Ken": {
+        "rouge1": 0.8266,
+        "rougeL": 0.8079
+      }
+    }
+  },
+  "oracle": {
+    "label": "exp5_encoder_oracle_top50",
+    "rouge1": 0.6889750171263002,
+    "rougeL": 0.627569495359982,
+    "per_subset": {
+      "Aka_Gha": {
+        "rouge1": 0.4054,
+        "rougeL": 0.2326
+      },
+      "Amh_Eth": {
+        "rouge1": 0.3118,
+        "rougeL": 0.2803
+      },
+      "Eng_Eth": {
+        "rouge1": 0.7539,
+        "rougeL": 0.7297
+      },
+      "Eng_Gha": {
+        "rouge1": 0.3906,
+        "rougeL": 0.2517
+      },
+      "Eng_Ken": {
+        "rouge1": 0.9221,
+        "rougeL": 0.908
+      },
+      "Eng_Uga": {
+        "rouge1": 0.939,
+        "rougeL": 0.9314
+      },
+      "Lug_Uga": {
+        "rouge1": 0.8668,
+        "rougeL": 0.8549
+      },
+      "Swa_Ken": {
+        "rouge1": 0.9198,
+        "rougeL": 0.9044
+      }
+    }
+  },
+  "delta_top1_vs_exp2_encoder": 0.006833374067742093,
+  "delta_oracle_vs_exp2_encoder": 0.005279042717891924,
+  "delta_rerank_vs_exp2": 0.0010546349015952972,
+  "diagnostics": {
+    "changed_from_top1_rows": 3291,
+    "wins_vs_top1_rows": 2024,
+    "hurts_vs_top1_rows": 1228,
+    "exact_oracle_ge_095_and_rerank_lt_050_rows": 399
+  }
+}

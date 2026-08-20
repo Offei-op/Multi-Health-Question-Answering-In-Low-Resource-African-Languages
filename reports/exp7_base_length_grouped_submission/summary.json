@@ -1,0 +1,272 @@
+{
+  "submission": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_submissions\\submission_exp7_cluster_base_length_grouped_available_sources.csv",
+  "base_source": "exp7_cluster",
+  "available_sources": [
+    "exp7_cluster",
+    "exp6_reranker",
+    "dense_top1",
+    "local_regressor"
+  ],
+  "source_scores": [
+    {
+      "source": "exp7_cluster",
+      "target_r1": 0.6363771294109717
+    },
+    {
+      "source": "exp6_reranker",
+      "target_r1": 0.5892166283468147
+    },
+    {
+      "source": "dense_top1",
+      "target_r1": 0.5395458277838778
+    },
+    {
+      "source": "local_regressor",
+      "target_r1": 0.10399207748125318
+    }
+  ],
+  "full_validation_group_score": 0.6375100486856335,
+  "oof_group_score": 0.6368311486805152,
+  "oof_gain_vs_exp2": 0.047614520333700616,
+  "full_validation_gain_vs_exp2": 0.048293420338819004,
+  "fold_scores": [
+    {
+      "fold": 1,
+      "score": 0.6437999822173471,
+      "rows": 1338
+    },
+    {
+      "fold": 2,
+      "score": 0.6411431125863071,
+      "rows": 1337
+    },
+    {
+      "fold": 3,
+      "score": 0.6302298997718883,
+      "rows": 1337
+    },
+    {
+      "fold": 4,
+      "score": 0.6366130026017469,
+      "rows": 1337
+    },
+    {
+      "fold": 5,
+      "score": 0.632364533933935,
+      "rows": 1337
+    }
+  ],
+  "group_picks": [
+    {
+      "subset": "Aka_Gha",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Aka_Gha",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Aka_Gha",
+      "length_bin": 2,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Aka_Gha",
+      "length_bin": 3,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Aka_Gha",
+      "length_bin": 4,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Amh_Eth",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Amh_Eth",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Amh_Eth",
+      "length_bin": 2,
+      "source": "exp6_reranker"
+    },
+    {
+      "subset": "Amh_Eth",
+      "length_bin": 3,
+      "source": "exp6_reranker"
+    },
+    {
+      "subset": "Amh_Eth",
+      "length_bin": 4,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Eth",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Eth",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Eth",
+      "length_bin": 2,
+      "source": "exp6_reranker"
+    },
+    {
+      "subset": "Eng_Eth",
+      "length_bin": 3,
+      "source": "exp6_reranker"
+    },
+    {
+      "subset": "Eng_Eth",
+      "length_bin": 4,
+      "source": "exp6_reranker"
+    },
+    {
+      "subset": "Eng_Gha",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Gha",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Gha",
+      "length_bin": 2,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Gha",
+      "length_bin": 3,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Gha",
+      "length_bin": 4,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Ken",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Ken",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Ken",
+      "length_bin": 2,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Ken",
+      "length_bin": 3,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Ken",
+      "length_bin": 4,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Uga",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Uga",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Uga",
+      "length_bin": 2,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Uga",
+      "length_bin": 3,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Eng_Uga",
+      "length_bin": 4,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Lug_Uga",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Lug_Uga",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Lug_Uga",
+      "length_bin": 2,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Lug_Uga",
+      "length_bin": 3,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Lug_Uga",
+      "length_bin": 4,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Swa_Ken",
+      "length_bin": 0,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Swa_Ken",
+      "length_bin": 1,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Swa_Ken",
+      "length_bin": 2,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Swa_Ken",
+      "length_bin": 3,
+      "source": "exp7_cluster"
+    },
+    {
+      "subset": "Swa_Ken",
+      "length_bin": 4,
+      "source": "exp7_cluster"
+    }
+  ],
+  "test_choice_counts": {
+    "exp7_cluster": 2560,
+    "exp6_reranker": 58
+  },
+  "diff_vs_exp7_cluster": 11,
+  "notes": [
+    "No Modal compute used.",
+    "This starts from submission_exp7_cluster_selector_trainval.csv as the base/fallback.",
+    "Group choices are learned from validation labels; OOF score is the safer estimate.",
+    "Only test-available sources are used."
+  ]
+}

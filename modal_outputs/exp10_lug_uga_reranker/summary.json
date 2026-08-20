@@ -1,0 +1,60 @@
+{
+  "experiment": "exp10_lug_uga_reranker",
+  "subset": "Lug_Uga",
+  "gpu": "L40S",
+  "train_rows": 3383,
+  "val_rows": 846,
+  "all_val_rows": 6686,
+  "k": 50,
+  "epochs": 1,
+  "train_pairs_per_query": 12,
+  "reranker_examples": 40596,
+  "train_seconds": 665.4740951061249,
+  "top1": {
+    "label": "lug_top1",
+    "rouge1": 0.5586771911482437,
+    "rougeL": 0.5356754361443129,
+    "per_subset": {
+      "Lug_Uga": {
+        "rouge1": 0.558677,
+        "rougeL": 0.535675
+      }
+    }
+  },
+  "oracle": {
+    "label": "lug_oracle",
+    "rouge1": 0.8532728829816133,
+    "rougeL": 0.8404519295697557,
+    "per_subset": {
+      "Lug_Uga": {
+        "rouge1": 0.853273,
+        "rougeL": 0.840452
+      }
+    }
+  },
+  "global_rerank": {
+    "label": "global_exp2_reranker",
+    "rouge1": 0.6793081908518714,
+    "rougeL": 0.6608428167278044,
+    "per_subset": {
+      "Lug_Uga": {
+        "rouge1": 0.679308,
+        "rougeL": 0.660843
+      }
+    }
+  },
+  "lug_rerank": {
+    "label": "lug_specialized_reranker",
+    "rouge1": 0.6783635334904257,
+    "rougeL": 0.6606593801939441,
+    "per_subset": {
+      "Lug_Uga": {
+        "rouge1": 0.678364,
+        "rougeL": 0.660659
+      }
+    }
+  },
+  "subset_delta_r1": -0.0009446573614457776,
+  "overall_delta_if_only_lug_swapped": -0.00011953038106238826,
+  "reranker_dir": "/data/exp10_lug_uga_reranker/reranker_final"
+}

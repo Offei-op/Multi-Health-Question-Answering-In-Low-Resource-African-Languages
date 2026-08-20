@@ -1,0 +1,100 @@
+{
+  "experiment": "exp8_ghana_grouped_encoder_reranker",
+  "subsets": [
+    "Aka_Gha",
+    "Eng_Gha"
+  ],
+  "gpu": "L40S",
+  "train_rows": 8898,
+  "val_rows": 2218,
+  "k": 50,
+  "dense_k": 200,
+  "lexical_k": 50,
+  "encoder_epochs": 1,
+  "encoder_pairs_per_anchor": 6,
+  "encoder_train_seconds": 843.6410613059998,
+  "encoder_examples": 52320,
+  "encoder_dir": "/data/exp8_ghana_grouped_encoder_reranker/encoder_final",
+  "reranker_epochs": 1,
+  "reranker_pairs_per_query": 12,
+  "reranker_train_seconds": 1335.3309898376465,
+  "reranker_examples": 106776,
+  "reranker_dir": "/data/exp8_ghana_grouped_encoder_reranker/reranker_final",
+  "global_encoder": {
+    "label": "global_encoder_ghana_val",
+    "top1_r1": 0.28671556828925526,
+    "oracle_r1": 0.38973992919407185,
+    "per_subset": {
+      "Aka_Gha": {
+        "top1_r1": 0.2903,
+        "oracle_r1": 0.395
+      },
+      "Eng_Gha": {
+        "top1_r1": 0.2831,
+        "oracle_r1": 0.3844
+      }
+    }
+  },
+  "ghana_encoder": {
+    "label": "ghana_encoder_ghana_val",
+    "top1_r1": 0.29205916552922917,
+    "oracle_r1": 0.3944582097807091,
+    "per_subset": {
+      "Aka_Gha": {
+        "top1_r1": 0.2939,
+        "oracle_r1": 0.4005
+      },
+      "Eng_Gha": {
+        "top1_r1": 0.2902,
+        "oracle_r1": 0.3884
+      }
+    }
+  },
+  "global_rerank": {
+    "label": "global_encoder_global_reranker",
+    "rouge1": 0.3120674036588961,
+    "rougeL": 0.19395176834560654,
+    "per_subset": {
+      "Aka_Gha": {
+        "rouge1": 0.3217,
+        "rougeL": 0.1887
+      },
+      "Eng_Gha": {
+        "rouge1": 0.3024,
+        "rougeL": 0.1993
+      }
+    }
+  },
+  "ghana_rerank": {
+    "label": "ghana_encoder_ghana_reranker",
+    "rouge1": 0.3223572650558902,
+    "rougeL": 0.2018567776032025,
+    "per_subset": {
+      "Aka_Gha": {
+        "rouge1": 0.3261,
+        "rougeL": 0.193
+      },
+      "Eng_Gha": {
+        "rouge1": 0.3186,
+        "rougeL": 0.2108
+      }
+    }
+  },
+  "ghana_top1": {
+    "label": "ghana_encoder_top1",
+    "rouge1": 0.29205916552922917,
+    "rougeL": 0.18459757426106385,
+    "per_subset": {
+      "Aka_Gha": {
+        "rouge1": 0.2939,
+        "rougeL": 0.1765
+      },
+      "Eng_Gha": {
+        "rouge1": 0.2902,
+        "rougeL": 0.1928
+      }
+    }
+  },
+  "delta_ghana_rerank_vs_global_rerank": 0.01028986139699406,
+  "delta_ghana_encoder_oracle_vs_global_encoder_oracle": 0.004718280586637258
+}

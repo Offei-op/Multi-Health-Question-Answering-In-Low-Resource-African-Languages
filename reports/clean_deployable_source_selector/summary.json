@@ -1,0 +1,86 @@
+{
+  "loaded_sources": [
+    "exp2_top1",
+    "exp2_rerank",
+    "cluster_fast",
+    "cluster_noleak"
+  ],
+  "missing_sources": [],
+  "best_single_source": {
+    "source": "exp2_rerank",
+    "coverage": 1.0,
+    "rouge1": 0.5892166283468145
+  },
+  "exp2_rerank": 0.5892166283468145,
+  "deployable_oracle": 0.6479322858935932,
+  "deployable_oracle_gain_vs_exp2": 0.058715657546778655,
+  "best_selector": {
+    "label": "hgb",
+    "rouge1": 0.6041607089218853,
+    "gain_vs_exp2_rerank": 0.014944080575070795,
+    "gain_vs_best_single": 0.014944080575070795,
+    "top_choice": "exp2_rerank"
+  },
+  "selector_results": [
+    {
+      "label": "hgb",
+      "rouge1": 0.6041607089218853,
+      "choice_counts": {
+        "exp2_rerank": 3510,
+        "cluster_fast": 1869,
+        "cluster_noleak": 840,
+        "exp2_top1": 467
+      },
+      "per_subset": {
+        "Aka_Gha": 0.322518,
+        "Amh_Eth": 0.187013,
+        "Eng_Eth": 0.668439,
+        "Eng_Gha": 0.304773,
+        "Eng_Ken": 0.827397,
+        "Eng_Uga": 0.878956,
+        "Lug_Uga": 0.761695,
+        "Swa_Ken": 0.829163
+      }
+    },
+    {
+      "label": "extra_trees",
+      "rouge1": 0.6039149386175271,
+      "choice_counts": {
+        "exp2_rerank": 2831,
+        "cluster_fast": 1616,
+        "cluster_noleak": 1264,
+        "exp2_top1": 975
+      },
+      "per_subset": {
+        "Aka_Gha": 0.32252,
+        "Amh_Eth": 0.190135,
+        "Eng_Eth": 0.673209,
+        "Eng_Gha": 0.306391,
+        "Eng_Ken": 0.823044,
+        "Eng_Uga": 0.877135,
+        "Lug_Uga": 0.760035,
+        "Swa_Ken": 0.826486
+      }
+    },
+    {
+      "label": "ensemble",
+      "rouge1": 0.6035426289913252,
+      "choice_counts": {
+        "exp2_rerank": 3415,
+        "cluster_fast": 1940,
+        "cluster_noleak": 919,
+        "exp2_top1": 412
+      },
+      "per_subset": {
+        "Aka_Gha": 0.323082,
+        "Amh_Eth": 0.190181,
+        "Eng_Eth": 0.671435,
+        "Eng_Gha": 0.3053,
+        "Eng_Ken": 0.826186,
+        "Eng_Uga": 0.877588,
+        "Lug_Uga": 0.755759,
+        "Swa_Ken": 0.827831
+      }
+    }
+  ]
+}

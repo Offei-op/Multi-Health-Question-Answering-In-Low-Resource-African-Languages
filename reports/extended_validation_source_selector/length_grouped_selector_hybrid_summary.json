@@ -1,0 +1,219 @@
+{
+  "score": 0.630320475330297,
+  "gain_vs_exp2": 0.04110384698348246,
+  "over_expanded_all_model_subset_hybrid": 0.0014086468313476708,
+  "best_config": {
+    "feature": "input_char_len",
+    "bins": 5,
+    "min_n": 80,
+    "score": 0.630320475330297,
+    "gain_vs_exp2": 0.04110384698348246,
+    "gain_vs_base": 0.0014086468313476708
+  },
+  "group_picks": [
+    {
+      "subset": "Aka_Gha",
+      "bin": 0,
+      "selector": "expanded_random_forest"
+    },
+    {
+      "subset": "Aka_Gha",
+      "bin": 1,
+      "selector": "expanded_hgb"
+    },
+    {
+      "subset": "Aka_Gha",
+      "bin": 2,
+      "selector": "all_model_subset_hybrid"
+    },
+    {
+      "subset": "Aka_Gha",
+      "bin": 3,
+      "selector": "extended_subset_hybrid"
+    },
+    {
+      "subset": "Aka_Gha",
+      "bin": 4,
+      "selector": "expanded_all_model_subset_hybrid"
+    },
+    {
+      "subset": "Amh_Eth",
+      "bin": 0,
+      "selector": "expanded_hgb"
+    },
+    {
+      "subset": "Amh_Eth",
+      "bin": 1,
+      "selector": "specialist_weighted_ensemble"
+    },
+    {
+      "subset": "Amh_Eth",
+      "bin": 2,
+      "selector": "specialist_random_forest"
+    },
+    {
+      "subset": "Amh_Eth",
+      "bin": 3,
+      "selector": "expanded_extra_trees"
+    },
+    {
+      "subset": "Amh_Eth",
+      "bin": 4,
+      "selector": "all_model_subset_hybrid"
+    },
+    {
+      "subset": "Eng_Eth",
+      "bin": 0,
+      "selector": "all_model_subset_hybrid"
+    },
+    {
+      "subset": "Eng_Eth",
+      "bin": 1,
+      "selector": "extended_specialist_subset_hybrid"
+    },
+    {
+      "subset": "Eng_Eth",
+      "bin": 2,
+      "selector": "specialist_hgb"
+    },
+    {
+      "subset": "Eng_Eth",
+      "bin": 3,
+      "selector": "specialist_random_forest"
+    },
+    {
+      "subset": "Eng_Eth",
+      "bin": 4,
+      "selector": "expanded_ensemble"
+    },
+    {
+      "subset": "Eng_Gha",
+      "bin": 0,
+      "selector": "expanded_extra_trees"
+    },
+    {
+      "subset": "Eng_Gha",
+      "bin": 1,
+      "selector": "specialist_weighted_ensemble"
+    },
+    {
+      "subset": "Eng_Gha",
+      "bin": 2,
+      "selector": "all_model_subset_hybrid"
+    },
+    {
+      "subset": "Eng_Gha",
+      "bin": 3,
+      "selector": "expanded_all_model_subset_hybrid"
+    },
+    {
+      "subset": "Eng_Gha",
+      "bin": 4,
+      "selector": "expanded_all_model_subset_hybrid"
+    },
+    {
+      "subset": "Eng_Ken",
+      "bin": 0,
+      "selector": "expanded_hgb"
+    },
+    {
+      "subset": "Eng_Ken",
+      "bin": 1,
+      "selector": "extended_specialist_subset_hybrid"
+    },
+    {
+      "subset": "Eng_Ken",
+      "bin": 2,
+      "selector": "specialist_extra_trees"
+    },
+    {
+      "subset": "Eng_Ken",
+      "bin": 3,
+      "selector": "expanded_random_forest"
+    },
+    {
+      "subset": "Eng_Ken",
+      "bin": 4,
+      "selector": "expanded_extra_trees"
+    },
+    {
+      "subset": "Eng_Uga",
+      "bin": 0,
+      "selector": "expanded_random_forest"
+    },
+    {
+      "subset": "Eng_Uga",
+      "bin": 1,
+      "selector": "expanded_extra_trees"
+    },
+    {
+      "subset": "Eng_Uga",
+      "bin": 2,
+      "selector": "extended_specialist_subset_hybrid"
+    },
+    {
+      "subset": "Eng_Uga",
+      "bin": 3,
+      "selector": "all_model_subset_hybrid"
+    },
+    {
+      "subset": "Eng_Uga",
+      "bin": 4,
+      "selector": "expanded_extra_trees"
+    },
+    {
+      "subset": "Lug_Uga",
+      "bin": 0,
+      "selector": "all_model_subset_hybrid"
+    },
+    {
+      "subset": "Lug_Uga",
+      "bin": 1,
+      "selector": "expanded_ensemble"
+    },
+    {
+      "subset": "Lug_Uga",
+      "bin": 2,
+      "selector": "specialist_hgb"
+    },
+    {
+      "subset": "Lug_Uga",
+      "bin": 3,
+      "selector": "expanded_random_forest"
+    },
+    {
+      "subset": "Lug_Uga",
+      "bin": 4,
+      "selector": "all_model_subset_hybrid"
+    },
+    {
+      "subset": "Swa_Ken",
+      "bin": 0,
+      "selector": "expanded_hgb"
+    },
+    {
+      "subset": "Swa_Ken",
+      "bin": 1,
+      "selector": "extended_specialist_subset_hybrid"
+    },
+    {
+      "subset": "Swa_Ken",
+      "bin": 2,
+      "selector": "expanded_extra_trees"
+    },
+    {
+      "subset": "Swa_Ken",
+      "bin": 3,
+      "selector": "extended_specialist_subset_hybrid"
+    },
+    {
+      "subset": "Swa_Ken",
+      "bin": 4,
+      "selector": "extended_subset_hybrid"
+    }
+  ],
+  "notes": [
+    "No Modal compute was used.",
+    "This is validation-tuned over selector outputs; mirror carefully before using on test."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "experiment": "exp13_lug_merged_selector",
+  "input_candidates": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp12_lug_e5_merge_rerank\\lug_val_candidate_scores.csv",
+  "rows": 46318,
+  "queries": 846,
+  "features": [
+    "rerank_score",
+    "rerank_rank",
+    "rerank_z",
+    "bge_rank_filled",
+    "e5_rank_filled",
+    "best_rank",
+    "rank_gap",
+    "bge_score_filled",
+    "e5_score_filled",
+    "score_gap",
+    "has_bge",
+    "has_e5",
+    "both_sources",
+    "answer_len",
+    "question_len",
+    "answer_char_len",
+    "question_char_len",
+    "bge_score_rank",
+    "e5_score_rank",
+    "candidate_count"
+  ],
+  "baseline": {
+    "bge_ft_top1": 0.5586771911482437,
+    "e5_large_top1": 0.48765316882277043,
+    "exp12_merged_rerank": 0.6835317759537722,
+    "merged_oracle": 0.8740366794311258
+  },
+  "oof_scores": {
+    "hgb_l2": {
+      "oof_mse": 0.007497982814614326,
+      "chosen_rouge1": 0.6918884229860995,
+      "changed_vs_exp12_rerank": 78
+    },
+    "hgb_abs": {
+      "oof_mse": 0.008181270221055498,
+      "chosen_rouge1": 0.6836209322698509,
+      "changed_vs_exp12_rerank": 105
+    },
+    "rf": {
+      "oof_mse": 0.007425765852377139,
+      "chosen_rouge1": 0.685071447157713,
+      "changed_vs_exp12_rerank": 77
+    },
+    "ridge": {
+      "oof_mse": 0.008804068430234815,
+      "chosen_rouge1": 0.6835961281869238,
+      "changed_vs_exp12_rerank": 59
+    },
+    "pred_mean": {
+      "chosen_rouge1": 0.687454813609036,
+      "changed_vs_exp12_rerank": 52
+    },
+    "pred_maxblend": {
+      "chosen_rouge1": 0.6878100488311472,
+      "changed_vs_exp12_rerank": 49
+    }
+  },
+  "best_selector": "hgb_l2",
+  "best_selector_rouge1": 0.6918884229860995,
+  "delta_vs_exp12_merged_rerank": 0.008356647032327302,
+  "remaining_gap_to_oracle": 0.1821482564450263
+}

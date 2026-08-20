@@ -1,0 +1,678 @@
+{
+  "mapped_sources": [
+    {
+      "validation_source": "exp1_baseline_qa_doc",
+      "has_known_local_test_equivalent": false,
+      "local_test_files": "",
+      "conversion_without_modal": "unknown/no"
+    },
+    {
+      "validation_source": "exp1_finetuned_qa_doc",
+      "has_known_local_test_equivalent": false,
+      "local_test_files": "",
+      "conversion_without_modal": "unknown/no"
+    },
+    {
+      "validation_source": "exp2_top1",
+      "has_known_local_test_equivalent": true,
+      "local_test_files": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\test_predictions_best_setup\\submission_encoder_top1_train_val.csv | C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_submissions\\submission_exp7_dense_top1_trainval.csv",
+      "conversion_without_modal": "yes"
+    },
+    {
+      "validation_source": "exp2_rerank",
+      "has_known_local_test_equivalent": true,
+      "local_test_files": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\test_predictions_best_setup\\submission_best_bgem3_rerank_train_val.csv | C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_submissions\\submission_exp6_reranker_trainval_top50cluster.csv",
+      "conversion_without_modal": "yes"
+    },
+    {
+      "validation_source": "exp3_top100_rerank",
+      "has_known_local_test_equivalent": false,
+      "local_test_files": "",
+      "conversion_without_modal": "unknown/no"
+    },
+    {
+      "validation_source": "exp4_pairwise",
+      "has_known_local_test_equivalent": false,
+      "local_test_files": "",
+      "conversion_without_modal": "unknown/no"
+    },
+    {
+      "validation_source": "exp5_encoder_exp2_rerank",
+      "has_known_local_test_equivalent": false,
+      "local_test_files": "",
+      "conversion_without_modal": "unknown/no"
+    },
+    {
+      "validation_source": "exp8_ghana_grouped",
+      "has_known_local_test_equivalent": false,
+      "local_test_files": "",
+      "conversion_without_modal": "unknown/no"
+    },
+    {
+      "validation_source": "exp9_jina",
+      "has_known_local_test_equivalent": false,
+      "local_test_files": "",
+      "conversion_without_modal": "unknown/no"
+    },
+    {
+      "validation_source": "exp10_lug_global",
+      "has_known_local_test_equivalent": false,
+      "local_test_files": "",
+      "conversion_without_modal": "unknown/no"
+    },
+    {
+      "validation_source": "exp10_lug_specialized",
+      "has_known_local_test_equivalent": false,
+      "local_test_files": "",
+      "conversion_without_modal": "unknown/no"
+    },
+    {
+      "validation_source": "exp12_lug_merged",
+      "has_known_local_test_equivalent": false,
+      "local_test_files": "",
+      "conversion_without_modal": "unknown/no"
+    },
+    {
+      "validation_source": "exp14_qonly",
+      "has_known_local_test_equivalent": false,
+      "local_test_files": "",
+      "conversion_without_modal": "unknown/no"
+    }
+  ],
+  "submission_like_csv_count": 30,
+  "submission_like_csvs": [
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_cluster_selector_test_predictions_files\\test_candidate_features_scored.csv",
+      "columns": [
+        "best_any_rank",
+        "row_i",
+        "candidate_answer",
+        "candidate_question",
+        "source_count",
+        "src_bge_q2q_top50",
+        "bge_q2q_top50_count",
+        "bge_q2q_top50_best_rank",
+        "bge_q2q_top50_max_score",
+        "max_any_score",
+        "rrf",
+        "src_tfidf_word_q2q_top50",
+        "tfidf_word_q2q_top50_count",
+        "tfidf_word_q2q_top50_best_rank",
+        "tfidf_word_q2q_top50_max_score",
+        "src_tfidf_char_q2q_top50",
+        "tfidf_char_q2q_top50_count",
+        "tfidf_char_q2q_top50_best_rank",
+        "tfidf_char_q2q_top50_max_score",
+        "src_tfidf_char_q2a_top50",
+        "tfidf_char_q2a_top50_count",
+        "tfidf_char_q2a_top50_best_rank",
+        "tfidf_char_q2a_top50_max_score",
+        "src_tfidf_word_q2a_top50",
+        "tfidf_word_q2a_top50_count",
+        "tfidf_word_q2a_top50_best_rank",
+        "tfidf_word_q2a_top50_max_score",
+        "src_bge_q2q_top200",
+        "bge_q2q_top200_count",
+        "bge_q2q_top200_best_rank",
+        "bge_q2q_top200_max_score",
+        "ID",
+        "query",
+        "subset",
+        "answer_freq_subset",
+        "answer_freq_global",
+        "candidate_answer_len",
+        "candidate_question_len",
+        "query_len",
+        "query_question_jaccard",
+        "query_answer_jaccard",
+        "log_answer_freq_subset",
+        "log_answer_freq_global",
+        "inv_best_any_rank",
+        "inv_bge_q2q_top50_best_rank",
+        "inv_tfidf_word_q2q_top50_best_rank",
+        "inv_tfidf_char_q2q_top50_best_rank",
+        "inv_tfidf_char_q2a_top50_best_rank",
+        "inv_tfidf_word_q2a_top50_best_rank",
+        "inv_bge_q2q_top200_best_rank",
+        "_pre_rerank_pool_score",
+        "exp6_rerank_score",
+        "exp6_rerank_rank",
+        "inv_exp6_rerank_rank",
+        "exp6_rerank_margin_to_best",
+        "selector_pred"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_cluster_selector_test_predictions_files\\test_reranker_choices.csv",
+      "columns": [
+        "best_any_rank",
+        "row_i",
+        "candidate_answer",
+        "candidate_question",
+        "source_count",
+        "src_bge_q2q_top50",
+        "bge_q2q_top50_count",
+        "bge_q2q_top50_best_rank",
+        "bge_q2q_top50_max_score",
+        "max_any_score",
+        "rrf",
+        "src_tfidf_word_q2q_top50",
+        "tfidf_word_q2q_top50_count",
+        "tfidf_word_q2q_top50_best_rank",
+        "tfidf_word_q2q_top50_max_score",
+        "src_tfidf_char_q2q_top50",
+        "tfidf_char_q2q_top50_count",
+        "tfidf_char_q2q_top50_best_rank",
+        "tfidf_char_q2q_top50_max_score",
+        "src_tfidf_char_q2a_top50",
+        "tfidf_char_q2a_top50_count",
+        "tfidf_char_q2a_top50_best_rank",
+        "tfidf_char_q2a_top50_max_score",
+        "src_tfidf_word_q2a_top50",
+        "tfidf_word_q2a_top50_count",
+        "tfidf_word_q2a_top50_best_rank",
+        "tfidf_word_q2a_top50_max_score",
+        "src_bge_q2q_top200",
+        "bge_q2q_top200_count",
+        "bge_q2q_top200_best_rank",
+        "bge_q2q_top200_max_score",
+        "ID",
+        "query",
+        "subset",
+        "answer_freq_subset",
+        "answer_freq_global",
+        "candidate_answer_len",
+        "candidate_question_len",
+        "query_len",
+        "query_question_jaccard",
+        "query_answer_jaccard",
+        "log_answer_freq_subset",
+        "log_answer_freq_global",
+        "inv_best_any_rank",
+        "inv_bge_q2q_top50_best_rank",
+        "inv_tfidf_word_q2q_top50_best_rank",
+        "inv_tfidf_char_q2q_top50_best_rank",
+        "inv_tfidf_char_q2a_top50_best_rank",
+        "inv_tfidf_word_q2a_top50_best_rank",
+        "inv_bge_q2q_top200_best_rank",
+        "_pre_rerank_pool_score",
+        "exp6_rerank_score",
+        "exp6_rerank_rank",
+        "inv_exp6_rerank_rank",
+        "exp6_rerank_margin_to_best",
+        "selector_pred"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_cluster_selector_test_predictions_files\\test_selector_choices.csv",
+      "columns": [
+        "best_any_rank",
+        "row_i",
+        "candidate_answer",
+        "candidate_question",
+        "source_count",
+        "src_bge_q2q_top50",
+        "bge_q2q_top50_count",
+        "bge_q2q_top50_best_rank",
+        "bge_q2q_top50_max_score",
+        "max_any_score",
+        "rrf",
+        "src_tfidf_word_q2q_top50",
+        "tfidf_word_q2q_top50_count",
+        "tfidf_word_q2q_top50_best_rank",
+        "tfidf_word_q2q_top50_max_score",
+        "src_tfidf_char_q2q_top50",
+        "tfidf_char_q2q_top50_count",
+        "tfidf_char_q2q_top50_best_rank",
+        "tfidf_char_q2q_top50_max_score",
+        "src_tfidf_char_q2a_top50",
+        "tfidf_char_q2a_top50_count",
+        "tfidf_char_q2a_top50_best_rank",
+        "tfidf_char_q2a_top50_max_score",
+        "src_tfidf_word_q2a_top50",
+        "tfidf_word_q2a_top50_count",
+        "tfidf_word_q2a_top50_best_rank",
+        "tfidf_word_q2a_top50_max_score",
+        "src_bge_q2q_top200",
+        "bge_q2q_top200_count",
+        "bge_q2q_top200_best_rank",
+        "bge_q2q_top200_max_score",
+        "ID",
+        "query",
+        "subset",
+        "answer_freq_subset",
+        "answer_freq_global",
+        "candidate_answer_len",
+        "candidate_question_len",
+        "query_len",
+        "query_question_jaccard",
+        "query_answer_jaccard",
+        "log_answer_freq_subset",
+        "log_answer_freq_global",
+        "inv_best_any_rank",
+        "inv_bge_q2q_top50_best_rank",
+        "inv_tfidf_word_q2q_top50_best_rank",
+        "inv_tfidf_char_q2q_top50_best_rank",
+        "inv_tfidf_char_q2a_top50_best_rank",
+        "inv_tfidf_word_q2a_top50_best_rank",
+        "inv_bge_q2q_top200_best_rank",
+        "_pre_rerank_pool_score",
+        "exp6_rerank_score",
+        "exp6_rerank_rank",
+        "inv_exp6_rerank_rank",
+        "exp6_rerank_margin_to_best",
+        "selector_pred"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_submissions\\submission_exp6_reranker_trainval_top50cluster.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_submissions\\submission_exp7_cluster_selector_trainval.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_submissions\\submission_exp7_dense_top1_trainval.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_submissions\\submission_local_candidate_regressor_hgb.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\test_predictions_best_setup\\submission_best_bgem3_rerank_train_val.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\test_predictions_best_setup\\submission_encoder_top1_train_val.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\test_predictions_best_setup\\test_candidate_scores.csv",
+      "columns": [
+        "ID",
+        "subset",
+        "candidate_rank",
+        "bi_score",
+        "rerank_score",
+        "chosen",
+        "candidate_question",
+        "candidate_answer"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\reports\\local_candidate_regressor_submission\\test_candidate_regressor_choices.csv",
+      "columns": [
+        "ID",
+        "candidate_answer",
+        "pred_margin_vs_rerank",
+        "use_best"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\submission_best_bgem3_rerank_train_val.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\submission_bgem3_retrieval.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\submission_bge_rerank.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\submission_rouge_reranker.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\Test.csv",
+      "columns": [
+        "ID",
+        "input",
+        "subset"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\Experiment G - results\\submission_best_per_subset.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\Experiment G - results\\submission_G.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\Experiment G - results\\submission_G_token_fusion.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\reports\\local_candidate_regressor_submission\\test_candidate_regressor_choices.csv",
+      "columns": [
+        "ID",
+        "candidate_answer",
+        "pred_margin_vs_rerank",
+        "use_best"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_cluster_selector_test_predictions_files\\test_candidate_features_scored.csv",
+      "columns": [
+        "best_any_rank",
+        "row_i",
+        "candidate_answer",
+        "candidate_question",
+        "source_count",
+        "src_bge_q2q_top50",
+        "bge_q2q_top50_count",
+        "bge_q2q_top50_best_rank",
+        "bge_q2q_top50_max_score",
+        "max_any_score",
+        "rrf",
+        "src_tfidf_word_q2q_top50",
+        "tfidf_word_q2q_top50_count",
+        "tfidf_word_q2q_top50_best_rank",
+        "tfidf_word_q2q_top50_max_score",
+        "src_tfidf_char_q2q_top50",
+        "tfidf_char_q2q_top50_count",
+        "tfidf_char_q2q_top50_best_rank",
+        "tfidf_char_q2q_top50_max_score",
+        "src_tfidf_char_q2a_top50",
+        "tfidf_char_q2a_top50_count",
+        "tfidf_char_q2a_top50_best_rank",
+        "tfidf_char_q2a_top50_max_score",
+        "src_tfidf_word_q2a_top50",
+        "tfidf_word_q2a_top50_count",
+        "tfidf_word_q2a_top50_best_rank",
+        "tfidf_word_q2a_top50_max_score",
+        "src_bge_q2q_top200",
+        "bge_q2q_top200_count",
+        "bge_q2q_top200_best_rank",
+        "bge_q2q_top200_max_score",
+        "ID",
+        "query",
+        "subset",
+        "answer_freq_subset",
+        "answer_freq_global",
+        "candidate_answer_len",
+        "candidate_question_len",
+        "query_len",
+        "query_question_jaccard",
+        "query_answer_jaccard",
+        "log_answer_freq_subset",
+        "log_answer_freq_global",
+        "inv_best_any_rank",
+        "inv_bge_q2q_top50_best_rank",
+        "inv_tfidf_word_q2q_top50_best_rank",
+        "inv_tfidf_char_q2q_top50_best_rank",
+        "inv_tfidf_char_q2a_top50_best_rank",
+        "inv_tfidf_word_q2a_top50_best_rank",
+        "inv_bge_q2q_top200_best_rank",
+        "_pre_rerank_pool_score",
+        "exp6_rerank_score",
+        "exp6_rerank_rank",
+        "inv_exp6_rerank_rank",
+        "exp6_rerank_margin_to_best",
+        "selector_pred"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_cluster_selector_test_predictions_files\\test_reranker_choices.csv",
+      "columns": [
+        "best_any_rank",
+        "row_i",
+        "candidate_answer",
+        "candidate_question",
+        "source_count",
+        "src_bge_q2q_top50",
+        "bge_q2q_top50_count",
+        "bge_q2q_top50_best_rank",
+        "bge_q2q_top50_max_score",
+        "max_any_score",
+        "rrf",
+        "src_tfidf_word_q2q_top50",
+        "tfidf_word_q2q_top50_count",
+        "tfidf_word_q2q_top50_best_rank",
+        "tfidf_word_q2q_top50_max_score",
+        "src_tfidf_char_q2q_top50",
+        "tfidf_char_q2q_top50_count",
+        "tfidf_char_q2q_top50_best_rank",
+        "tfidf_char_q2q_top50_max_score",
+        "src_tfidf_char_q2a_top50",
+        "tfidf_char_q2a_top50_count",
+        "tfidf_char_q2a_top50_best_rank",
+        "tfidf_char_q2a_top50_max_score",
+        "src_tfidf_word_q2a_top50",
+        "tfidf_word_q2a_top50_count",
+        "tfidf_word_q2a_top50_best_rank",
+        "tfidf_word_q2a_top50_max_score",
+        "src_bge_q2q_top200",
+        "bge_q2q_top200_count",
+        "bge_q2q_top200_best_rank",
+        "bge_q2q_top200_max_score",
+        "ID",
+        "query",
+        "subset",
+        "answer_freq_subset",
+        "answer_freq_global",
+        "candidate_answer_len",
+        "candidate_question_len",
+        "query_len",
+        "query_question_jaccard",
+        "query_answer_jaccard",
+        "log_answer_freq_subset",
+        "log_answer_freq_global",
+        "inv_best_any_rank",
+        "inv_bge_q2q_top50_best_rank",
+        "inv_tfidf_word_q2q_top50_best_rank",
+        "inv_tfidf_char_q2q_top50_best_rank",
+        "inv_tfidf_char_q2a_top50_best_rank",
+        "inv_tfidf_word_q2a_top50_best_rank",
+        "inv_bge_q2q_top200_best_rank",
+        "_pre_rerank_pool_score",
+        "exp6_rerank_score",
+        "exp6_rerank_rank",
+        "inv_exp6_rerank_rank",
+        "exp6_rerank_margin_to_best",
+        "selector_pred"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_cluster_selector_test_predictions_files\\test_selector_choices.csv",
+      "columns": [
+        "best_any_rank",
+        "row_i",
+        "candidate_answer",
+        "candidate_question",
+        "source_count",
+        "src_bge_q2q_top50",
+        "bge_q2q_top50_count",
+        "bge_q2q_top50_best_rank",
+        "bge_q2q_top50_max_score",
+        "max_any_score",
+        "rrf",
+        "src_tfidf_word_q2q_top50",
+        "tfidf_word_q2q_top50_count",
+        "tfidf_word_q2q_top50_best_rank",
+        "tfidf_word_q2q_top50_max_score",
+        "src_tfidf_char_q2q_top50",
+        "tfidf_char_q2q_top50_count",
+        "tfidf_char_q2q_top50_best_rank",
+        "tfidf_char_q2q_top50_max_score",
+        "src_tfidf_char_q2a_top50",
+        "tfidf_char_q2a_top50_count",
+        "tfidf_char_q2a_top50_best_rank",
+        "tfidf_char_q2a_top50_max_score",
+        "src_tfidf_word_q2a_top50",
+        "tfidf_word_q2a_top50_count",
+        "tfidf_word_q2a_top50_best_rank",
+        "tfidf_word_q2a_top50_max_score",
+        "src_bge_q2q_top200",
+        "bge_q2q_top200_count",
+        "bge_q2q_top200_best_rank",
+        "bge_q2q_top200_max_score",
+        "ID",
+        "query",
+        "subset",
+        "answer_freq_subset",
+        "answer_freq_global",
+        "candidate_answer_len",
+        "candidate_question_len",
+        "query_len",
+        "query_question_jaccard",
+        "query_answer_jaccard",
+        "log_answer_freq_subset",
+        "log_answer_freq_global",
+        "inv_best_any_rank",
+        "inv_bge_q2q_top50_best_rank",
+        "inv_tfidf_word_q2q_top50_best_rank",
+        "inv_tfidf_char_q2q_top50_best_rank",
+        "inv_tfidf_char_q2a_top50_best_rank",
+        "inv_tfidf_word_q2a_top50_best_rank",
+        "inv_bge_q2q_top200_best_rank",
+        "_pre_rerank_pool_score",
+        "exp6_rerank_score",
+        "exp6_rerank_rank",
+        "inv_exp6_rerank_rank",
+        "exp6_rerank_margin_to_best",
+        "selector_pred"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_submissions\\submission_exp6_reranker_trainval_top50cluster.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_submissions\\submission_exp7_cluster_selector_trainval.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_submissions\\submission_exp7_dense_top1_trainval.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\exp7_submissions\\submission_local_candidate_regressor_hgb.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\test_predictions_best_setup\\submission_best_bgem3_rerank_train_val.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\test_predictions_best_setup\\submission_encoder_top1_train_val.csv",
+      "columns": [
+        "ID",
+        "TargetRLF1",
+        "TargetR1F1",
+        "TargetLLM"
+      ]
+    },
+    {
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\modal_outputs\\test_predictions_best_setup\\test_candidate_scores.csv",
+      "columns": [
+        "ID",
+        "subset",
+        "candidate_rank",
+        "bi_score",
+        "rerank_score",
+        "chosen",
+        "candidate_question",
+        "candidate_answer"
+      ]
+    }
+  ],
+  "notes": [
+    "This audit only maps local files already present. It does not claim unavailable sources are impossible, only that no local test equivalent was found.",
+    "Sources like exp3/exp4/exp5/exp9/exp14 may require model inference to convert, which could be local if model artifacts are available, but not from existing submission CSVs."
+  ]
+}

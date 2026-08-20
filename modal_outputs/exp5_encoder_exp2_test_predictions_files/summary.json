@@ -1,0 +1,15 @@
+{
+  "experiment": "exp5_encoder_exp2_rerank_test_predictions",
+  "k": 50,
+  "bank": "Train.csv + Val.csv",
+  "encoder": "/data/exp5_bgem3_encoder_mining_v2/final",
+  "reranker": "/data/exp2_crossencoder_rerank/final",
+  "test_rows": 2618,
+  "submission": "/data/exp5_encoder_exp2_test_predictions/submission_exp5_encoder_exp2_rerank_trainval.csv",
+  "encoder_top1_submission": "/data/exp5_encoder_exp2_test_predictions/submission_exp5_encoder_top1_trainval.csv",
+  "test_predictions": "/data/exp5_encoder_exp2_test_predictions/test_predictions.csv",
+  "debug_candidates": "/data/exp5_encoder_exp2_test_predictions/test_candidate_scores.csv",
+  "blank_predictions": 0,
+  "changed_by_reranker_vs_encoder_top1": 1206,
+  "mean_chosen_rank": 9.75057295645531
+}

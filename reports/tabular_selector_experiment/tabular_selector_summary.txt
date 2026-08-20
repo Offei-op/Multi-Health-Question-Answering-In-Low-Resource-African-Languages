@@ -1,0 +1,20 @@
+TABULAR SELECTOR EXPERIMENT SUMMARY
+================================================================================
+{
+  "encoder_top1": 0.5394795443970752,
+  "exp2_rerank": 0.5889304525640328,
+  "oracle_top50": 0.6840949279607131,
+  "best_possible_top1_or_rerank": 0.6143196043561107
+}
+
+Binary selector leaderboard
+      model  auc_top1_better best_scope  best_threshold  best_score  best_gain  best_fallback_n  global_0_5_score  global_0_5_gain  global_0_5_fallback_n
+   lightgbm         0.861292    __ALL__            0.88    0.590970   0.002039              156          0.587326        -0.001605                   1534
+    hist_gb         0.862198    __ALL__            0.66    0.590711   0.001780              263          0.590200         0.001269                    693
+     logreg         0.780478    Eng_Gha            0.80    0.589715   0.000784               91          0.564024        -0.024906                   3003
+extra_trees         0.833990    Eng_Uga            0.66    0.589683   0.000752               60          0.572422        -0.016509                   2723
+
+Candidate-level leaderboard
+          model    score  gain_vs_rerank  chosen_is_encoder_top1_pct  chosen_is_exp2_rerank_pct
+   lightgbm_reg 0.591256        0.002325                    0.384984                   0.577326
+extra_trees_reg 0.589498        0.000567                    0.340862                   0.587795

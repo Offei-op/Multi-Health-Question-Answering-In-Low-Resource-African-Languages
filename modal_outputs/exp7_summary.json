@@ -1,0 +1,16 @@
+{
+  "experiment": "exp7_cluster_selector_trainval_test",
+  "reranker": "/data/exp6_crossencoder_rerank_train_val/final",
+  "bge_k": 200,
+  "lexical_k": 50,
+  "cap_per_row": 50,
+  "bank_rows": 36500,
+  "test_rows": 2618,
+  "train_candidate_rows": 1802223,
+  "test_candidate_rows": 128947,
+  "selector_submission": "/data/exp7_cluster_selector_test_predictions/submission_exp7_cluster_selector_trainval.csv",
+  "reranker_submission": "/data/exp7_cluster_selector_test_predictions/submission_exp6_reranker_trainval_top50cluster.csv",
+  "dense_submission": "/data/exp7_cluster_selector_test_predictions/submission_exp7_dense_top1_trainval.csv",
+  "selector_vs_reranker_changed": 603,
+  "blank_selector_predictions": 0
+}

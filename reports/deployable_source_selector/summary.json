@@ -1,0 +1,119 @@
+{
+  "loaded_sources": [
+    "exp2_top1",
+    "exp2_rerank",
+    "cluster_fast",
+    "cluster_fullcap",
+    "cluster_noleak"
+  ],
+  "missing_sources": [
+    {
+      "source": "local_regressor",
+      "reason": "bad_columns",
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\reports\\local_candidate_regressor_submission\\val_oof_choices.csv",
+      "columns": [
+        "ID",
+        "subset",
+        "candidate_rank",
+        "rerank_rank",
+        "candidate_r1",
+        "pred_hgb"
+      ]
+    },
+    {
+      "source": "local_regressor_margin",
+      "reason": "bad_columns",
+      "path": "C:\\Users\\Papa Offei\\Documents\\lalang\\reports\\local_candidate_regressor_submission\\val_margin_gate_rows.csv",
+      "columns": [
+        "ID",
+        "subset",
+        "candidate_r1_best",
+        "pred_hgb_best",
+        "candidate_r1_rerank",
+        "pred_hgb_rerank",
+        "pred_margin_vs_rerank",
+        "actual_gain_vs_rerank"
+      ]
+    }
+  ],
+  "best_single_source": {
+    "source": "cluster_fullcap",
+    "coverage": 1.0,
+    "rouge1": 0.6353457041144692
+  },
+  "exp2_rerank": 0.5892166283468145,
+  "deployable_oracle": 0.6594522709392795,
+  "deployable_oracle_gain_vs_exp2": 0.07023564259246495,
+  "best_selector": {
+    "label": "extra_trees",
+    "rouge1": 0.6301936577454038,
+    "gain_vs_exp2_rerank": 0.04097702939858927,
+    "gain_vs_best_single": -0.005152046369065411,
+    "top_choice": "cluster_fullcap"
+  },
+  "selector_results": [
+    {
+      "label": "hgb",
+      "rouge1": 0.628435960151685,
+      "choice_counts": {
+        "cluster_fullcap": 4197,
+        "exp2_rerank": 1659,
+        "cluster_fast": 439,
+        "exp2_top1": 203,
+        "cluster_noleak": 188
+      },
+      "per_subset": {
+        "Aka_Gha": 0.331688,
+        "Amh_Eth": 0.198123,
+        "Eng_Eth": 0.674056,
+        "Eng_Gha": 0.310832,
+        "Eng_Ken": 0.874939,
+        "Eng_Uga": 0.906712,
+        "Lug_Uga": 0.825412,
+        "Swa_Ken": 0.863531
+      }
+    },
+    {
+      "label": "extra_trees",
+      "rouge1": 0.6301936577454038,
+      "choice_counts": {
+        "cluster_fullcap": 3189,
+        "exp2_rerank": 2103,
+        "cluster_fast": 620,
+        "exp2_top1": 499,
+        "cluster_noleak": 275
+      },
+      "per_subset": {
+        "Aka_Gha": 0.332544,
+        "Amh_Eth": 0.193642,
+        "Eng_Eth": 0.673945,
+        "Eng_Gha": 0.313094,
+        "Eng_Ken": 0.87915,
+        "Eng_Uga": 0.909146,
+        "Lug_Uga": 0.82877,
+        "Swa_Ken": 0.867085
+      }
+    },
+    {
+      "label": "ensemble",
+      "rouge1": 0.62988559302051,
+      "choice_counts": {
+        "cluster_fullcap": 4138,
+        "exp2_rerank": 1654,
+        "cluster_fast": 531,
+        "exp2_top1": 194,
+        "cluster_noleak": 169
+      },
+      "per_subset": {
+        "Aka_Gha": 0.332241,
+        "Amh_Eth": 0.195792,
+        "Eng_Eth": 0.67393,
+        "Eng_Gha": 0.311668,
+        "Eng_Ken": 0.878472,
+        "Eng_Uga": 0.908989,
+        "Lug_Uga": 0.826882,
+        "Swa_Ken": 0.869005
+      }
+    }
+  ]
+}
